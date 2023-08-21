@@ -22,7 +22,7 @@ function About() {
   }
 
   return (
-    <section className="about bg-about">
+    <section className="about bg-about" id='about'>
         <div className="container">
             <div className="row">
                 <div className="about-col-1">
