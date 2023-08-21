@@ -40,8 +40,8 @@ function About() {
             </div>
                     <div className="tab-tittles">
                         <p className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`} onClick={(event) => openTab('education', event)}>EDUCATION</p>
-                        <p className={`tab-links ${activeTab === 'certificates' ? 'active-link' : ''}`} onClick={(event) => openTab('certificates', event)}>CERTIFICATE</p>
-                        <p className={`tab-links ${activeTab === 'achievements' ? 'active-link' : ''}`} onClick={(event) => openTab('achievements', event)}>ACHIEVEMENTS</p>
+                        {/* <p className={`tab-links ${activeTab === 'certificates' ? 'active-link' : ''}`} onClick={(event) => openTab('certificates', event)}>CERTIFICATE</p>
+                        <p className={`tab-links ${activeTab === 'achievements' ? 'active-link' : ''}`} onClick={(event) => openTab('achievements', event)}>ACHIEVEMENTS</p> */}
                         <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} onClick={(event) => openTab('skills', event)}>SKILLS</p>
                         <p className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`} onClick={(event) => openTab('experience', event)}>EXPERIENCE</p>
                     </div>
@@ -63,7 +63,7 @@ function About() {
                         </ul>
                     </div>
 
-                    <div className={`tab-contents ${activeTab === 'certificates' ? 'active-tab' : ''}`} id='certificates'>
+                    {/* <div className={`tab-contents ${activeTab === 'certificates' ? 'active-tab' : ''}`} id='certificates'>
                         <ul>
                             <li><span>2023 - Current</span><br />Software Developer Intern at UVU Africa (CapaciTi).</li>
                             <li><span>2022 - 2022</span><br />Merchandiser at Super Spar in Butterworth, Eastern Cape.</li>
@@ -79,7 +79,7 @@ function About() {
                             <li><span>Web Developer</span><br />Developing Websites.</li>
                             <li><span>Multimedia artist</span><br />I specialize in creating visually appealing and engaging content for advertising campaigns.</li>
                         </ul>
-                    </div>
+                    </div> */}
 
                     <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab' : ''}`} id="experience">
                         <ul>
