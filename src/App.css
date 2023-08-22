@@ -234,7 +234,7 @@
 
 .about-col-2, .text {
   font-size: 1.8rem;
-
+  letter-spacing: 0.2rem;
 }
 
 .tab-tittles {
@@ -255,6 +255,7 @@
   font-size: 2rem;
   cursor: pointer;
   position: relative;
+  letter-spacing: 0.2rem;
 }
 
 .tab-links::after {
