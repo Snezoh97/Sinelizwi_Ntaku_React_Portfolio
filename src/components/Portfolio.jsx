@@ -22,7 +22,7 @@ const Portfolio = () => {
             <p>I have a Python-based financial banking app, available on my GitHub profile. 
               It provides secure banking features, and intuitive user interfaces for a streamlined banking experience. 
             </p>
-            <a href="https://github.com/Snezoh97/Nexus_Financial_Banking_App" title="Financial Banking App on GitHub"><i className='bx bx-link-external' ></i></a>
+            <a href="https://i.ibb.co/RvGMq7Z/bank-app.png" title="Financial Banking App on GitHub"><i className='bx bx-link-external' ></i></a>
           </div>
         </div>
         <div className="portfolio-box">
