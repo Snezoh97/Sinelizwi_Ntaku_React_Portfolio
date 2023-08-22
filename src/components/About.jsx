@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AboutSection = (props) => {
+function About (props) {
   const [activeTab, setActiveTab] = useState('skills');
 
   const handleTabClick = (tabName) => {
@@ -86,4 +86,4 @@ const AboutSection = (props) => {
   );
 }
 
-export default AboutSection;
+export default About;
