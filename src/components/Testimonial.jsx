@@ -48,7 +48,8 @@ function Testimonials(){
                   <a href="" title="Twitter"><i className="fab fa-twitter"></i></a>
                   <a href="" title="Instagram"><i className="fab fa-instagram"></i></a>
                 </div>
-                <p className="profession">Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.</p>
+                <p className="profession"><i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.
+                <i className='bx bxs-quote-right qoutes'></i></p>
               </div>
             </div>
           </div>
