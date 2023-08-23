@@ -18,7 +18,7 @@ function Testimonials(){
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                   </div>
-                <p className="profesion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
+                <p className="profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
               </div>
             </div>
 
