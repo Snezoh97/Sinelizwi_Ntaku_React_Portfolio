@@ -18,7 +18,7 @@ function Testimonials(){
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                   </div>
-                <p className="profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
+                <p className="profession"> Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.</p>
               </div>
             </div>
 
@@ -33,7 +33,7 @@ function Testimonials(){
                   <i className="fas fa-star"></i>
                   <i className="far fa-star"></i>
                 </div>
-                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
+                <p >Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.</p>
               </div>
             </div>
 
