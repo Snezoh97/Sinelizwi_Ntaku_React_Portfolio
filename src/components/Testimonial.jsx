@@ -18,7 +18,8 @@ function Testimonials(){
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                   </div>
-                <p className="profession"><i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.</p>
+                <p className="profession"><i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.
+                <i className='bx bxs-quote-right qoutes'></i></p>
               </div>
             </div>
 
