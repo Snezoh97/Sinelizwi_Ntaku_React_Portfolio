@@ -78,9 +78,7 @@ function About (props) {
               </ul>
             </div>
             <br /><br />
-            <a href="#contact" className="custom-btn btn-12"><span>Click!</span><span>Download Cv</span></a>
-
-            {/* <button className="custom-btn btn-12"><span>Click!</span><span>Read More</span></button> */}
+            <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Click!</span><span>Download Cv</span></a>
           </div>
         </div>
       </div>

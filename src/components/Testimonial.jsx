@@ -44,9 +44,9 @@ function Testimonials(){
                 <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="" />
                 <div className="name">Sinelizwi Ntaku</div>
                 <div class="media-icons">
-                  <a href="" title="Facebook"><i className="fab fa-linkedin"></i></a>
-                  <a href="" title="Twitter"><i className="fab fa-twitter"></i></a>
-                  <a href="" title="Instagram"><i className="fab fa-instagram"></i></a>
+                  <a href="" title="Facebook"><i className='bx bxl-facebook'></i></a>
+                  <a href="" title="Twitter"><i className='bx bxl-twitter'></i></a>
+                  <a href="" title="Instagram"><i className='bx bxl-instagram' ></i></a>
                 </div>
                 <p className="profession"><i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter on GitHub, a versatile tool for converting various measurements and quantities.
                 <i className='bx bxs-quote-right qoutes'></i></p>

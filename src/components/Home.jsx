@@ -51,6 +51,7 @@ function Home() {
                 <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
                 Hire Me
                 </a>
+                <a href="#contact" className="custom-btn btn-12"><span>Click!</span><span>Let's Chat!</span></a>
             </div>
             <div className="home-img">
                 <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="about-img"/>
