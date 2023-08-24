@@ -48,9 +48,9 @@ function Home() {
                     <a href="https://github.com/Snezoh97" title="GitHub"><i className='bx bxl-github'></i></a>
                     <a href="https://wa.me/message/HP4CKPENLFHKD1" title="WhatsApp"><i className='bx bxl-whatsapp' ></i></a>
                 </div>
-                <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
+                {/* <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
                 Hire Me
-                </a>
+                </a> */}
                 <a href="#contact" className="custom-btn btn-12"><span>Click!</span><span>Let's Chat!</span></a>
             </div>
             <div className="home-img">
