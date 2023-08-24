@@ -7,6 +7,7 @@ import About from './components/About'
 import Services from './components/Service'
 import Portfolio from './components/Portfolio'
 import Testimonials from './components/Testimonial'
+import Contact from './components/Contact'
 
 
 
@@ -19,5 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    <Services />
    <Portfolio/> 
    <Testimonials/>
+   <Contact />
   </React.StrictMode>,
 )

@@ -770,7 +770,7 @@
     #contact {
       background: var(--second-bg-color);
     }
-    .contact h2 {
+    /* .contact h2 {
       margin-bottom: 4rem;
       text-align: center;
       font-size: 2.6rem;
@@ -813,6 +813,10 @@
       margin-top: 2rem;
       cursor: pointer;
     }
+
+    */
+
+    
   
     /*--------------------- Footer style ----------------- */
   
@@ -853,7 +857,9 @@
       font-size: 2.4rem;
       color: var(--second-bg-color);
     }
-    
+     */
+
+
     /*------------------ Breakpoints ---------------------*/
   
     @media screen and (max-width: 1480px) {
