@@ -286,7 +286,7 @@
   position: absolute;
   left: 0;
   top: 30px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .tab-links.active-link::after {
@@ -408,7 +408,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    background: var(--bg-color);
+    
   }
   #services h2 {
     margin-top: 5rem;
@@ -927,16 +927,15 @@
       width: 70vw;
       margin-top: 4rem;
     }
-  
-    .about-col-1,
-    .about-col-2 {
-      display: block;
+    .container-tab {
+      display: flex;
+      justify-content: center;
+    }
+
+    .tab-tittles {
+      
     }
     
-    .about-col-1 img {
-      width: 70vh;
-      margin-bottom: 20px;
-    }
     
     .sub-tittle {
       font-size: 28px;

@@ -19,7 +19,7 @@ function Services(){
             <i className='bx bxs-paint' ></i>
             <h3>Software Developer</h3>
             <p>As a software developer experienced in Java, Python, React, Node.js, JavaScript, and C#, I specialize in developing 
-              software applications and games. You can find some of my projects on my GitHub profile.
+              software applications and games.
             </p>
             <a href="https://github.com/Snezoh97/Games_Mzamomtsha" title="Games"><i className='bx bx-link-external' ></i></a>
           </div>
@@ -37,7 +37,7 @@ function Services(){
             <i className='bx bxl-java'></i>
             <h3>Java Developer</h3>
             <p> Java developers use the Java language for programming and software development. Popular Java projects on 
-              GitHub include applications and tools developed using IDEs like NetBeans and Visual Studio Code.
+              GitHub include applications and tools developed using IDEs.
             </p>
             <a href="https://github.com/Snezoh97/Unit_Converter" title="Convertor"><i className='bx bx-link-external' ></i></a>
           </div>
