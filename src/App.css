@@ -629,13 +629,13 @@
       background: var(--second-bg-color);
       border: .2rem solid var(--main-color);
       border-radius: 50%;
-      width: 3rem; /* Adjust icon size if needed */
-      height: 3rem; /* Adjust icon size if needed */
+      width: 3rem; 
+      height: 3rem;
       font-size: 2.7rem;
       color: var(--main-color);
-      margin-bottom: 10px; /* Add margin to create space between icons */
+      margin-bottom: 10px;
       transition: .5s ease;
-      animation: bounce 3s infinite; /* Apply the bounce animation */
+      animation: bounce 3s infinite;
   }
   
   .media-icons a:hover {
@@ -643,7 +643,7 @@
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
     letter-spacing: 0.2rem;
-    transform: rotate(45deg); /* Add rotation when hovering */
+    transform: rotate(0deg)
 }
   
 @keyframes bounce {
