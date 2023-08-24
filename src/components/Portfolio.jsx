@@ -8,21 +8,21 @@ function Portfolio (){
         <div className="portfolio-box">
           <img src="https://i.ibb.co/qkjfyYX/fcalc.png" alt="fcal" />
           <div className="portfolio-layer">
-            <h4>Finance Calculator</h4>
-            <p>I have developed a Python-based finance calculator available on my GitHub. 
+            <h4 className='boxHeading'>Finance Calculator</h4>
+            <p className='boxParagraph'>I have developed a Python-based finance calculator available on my GitHub. 
               Feel free to explore the project on my GitHub for the code and details. 
             </p>
-            <a href="https://github.com/Snezoh97/Financial_Calculator" title="Financial Calculator on GitHub"><i className='bx bx-link-external' ></i></a>
+            <a href="https://github.com/Snezoh97/Financial_Calculator" title="Financial Calculator on GitHub"><i id='link' className='bx bx-link-external' ></i></a>
           </div>
         </div>
         <div className="portfolio-box">
           <img src="https://i.ibb.co/8mj1PWv/nexus.png" alt="nexus"/>
           <div className="portfolio-layer">
-            <h4>Financial Banking App</h4>
-            <p>I have a Python-based financial banking app, available on my GitHub profile. 
+            <h4 className='boxHeading'>Financial Banking App</h4>
+            <p className='boxParagraph'>I have a Python-based financial banking app, available on my GitHub profile. 
               It provides secure banking features, and intuitive user interfaces for a streamlined banking experience. 
             </p>
-            <a href="https://i.ibb.co/RvGMq7Z/bank-app.png" title="Financial Banking App on GitHub"><i className='bx bx-link-external' ></i></a>
+            <a href="https://i.ibb.co/RvGMq7Z/bank-app.png" title="Financial Banking App on GitHub"><i id='link' className='bx bx-link-external' ></i></a>
           </div>
         </div>
         <div className="portfolio-box">

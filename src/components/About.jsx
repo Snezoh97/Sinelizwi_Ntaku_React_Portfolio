@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function About (props) {
-  const [activeTab, setActiveTab] = useState('skills');
+  const [activeTab, setActiveTab] = useState('education');
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -25,13 +25,32 @@ function About (props) {
             </p>
 
             {/* ---------- Tab Links --------  */}
-
+            <div className='container-tab'>
             <div className="tab-tittles">
+              <p
+                className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
+                onClick={() => handleTabClick('education')}
+              >
+                Education
+              </p>
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
                 onClick={() => handleTabClick('skills')}
               >
                 Skills
+              </p>
+
+              <p
+                className={`tab-links ${activeTab === 'certificates' ? 'active-link' : ''}`}
+                onClick={() => handleTabClick('certificates')}
+              >
+                Certificates
+              </p>
+              <p
+                className={`tab-links ${activeTab === 'achievements' ? 'active-link' : ''}`}
+                onClick={() => handleTabClick('achievements')}
+              >
+                Achievements
               </p>
               <p
                 className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`}
@@ -39,12 +58,7 @@ function About (props) {
               >
                 Experience
               </p>
-              <p
-                className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
-                onClick={() => handleTabClick('education')}
-              >
-                Education
-              </p>
+              
             </div>
 
             {/* ---------- Tab Contents -----------  */}
@@ -57,6 +71,7 @@ function About (props) {
                 <li><span>Multimedia artist</span><br />I specialize in creating visually appealing and engaging content for advertising campaigns.</li>
               </ul>
             </div>
+          
 
             {/* -------- Experience -------  */}
 
@@ -76,6 +91,7 @@ function About (props) {
                 <li><span>2020</span><br />National Diploma in Information and Communication Technology</li>
                 <li><span>2016</span><br />National Senior Certificate</li>
               </ul>
+            </div>
             </div>
             <br /><br />
             <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Click!</span><span>Download Cv</span></a>
