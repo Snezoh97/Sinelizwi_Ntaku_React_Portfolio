@@ -688,7 +688,7 @@
           transform: translateX(0);
       }
       50% {
-          transform: translateX(15px); /* Adjust bounce distance as needed */
+          transform: translateX(15px);
       }
     }
 
@@ -697,7 +697,7 @@
           transform: rotate(45deg);
       }
       50% {
-          transform: rotate(45deg) translateX(15px); /* Adjust bounce distance as needed */
+          transform: rotate(45deg) translateX(15px);
       }
     }
 
@@ -739,7 +739,7 @@
     
     
     /* ------------- Contact Style ----------  */
-  
+  /*
     #contact {
       background: var(--second-bg-color);
     }
@@ -749,6 +749,7 @@
       font-size: 2.6rem;
       line-height: 4.5rem;
     }
+  
   
     .contact form {
       max-width: 70rem;
@@ -785,6 +786,492 @@
     .contact form .btn {
       margin-top: 2rem;
       cursor: pointer;
+    } 
+
+    .main-container {
+      min-height: 100vh;
+      margin: 100px 0 -450px 0;
+    }
+    
+    .central-form {
+      max-width: 1100px;
+      padding: 0px;
+      display: flex;
+      box-shadow: 0 0px 20px -2px #1f2235;
+      border-radius: 12px;
+      margin: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: var(--bg-color);
+    }
+    
+    .title {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: var(--text-color);
+    }
+    
+    .back-form {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    
+    .back-form .img-back {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .img-back h4 {
+      font-family: "Montserrat Medium";
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      color: rgba(4, 4, 9, 0.689);
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    
+    .back-form .img-back img {
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .central-form form {
+      width: auto;
+      box-shadow: 0 0 2px 1px white;
+      display: flex;
+      color: rgba(4, 4, 9, 0.689);
+      padding: 15px;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: -52px;
+      opacity: 0.9;
+      background-color: white;
+      box-shadow: 0 0px 20px -2px #1f2235;
+      border-radius: 12px;
+    }
+    
+    form p {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #ff5823;
+      letter-spacing: 0.1rem;
+      font-family: "Poppins Bold";
+    }
+    
+    form label {
+      margin-bottom: 5px;
+      color: rgba(4, 4, 9, 0.689);
+      letter-spacing: 0.2rem;
+    }
+    
+    form input,
+    textarea {
+      width: 100%;
+      border: 2px solid rgba(0, 0, 0, 0);
+      outline: none;
+      background-color: rgba(230, 230, 230, 0.6);
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 22px;
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    
+    textarea:focus {
+      border: 2px solid rgba(30, 85, 250, 0.47);
+      background-color: #fff;
+    }
+    form input:focus {
+      border: 2px solid rgba(30, 85, 250, 0.47);
+      background-color: #fff;
+    }
+    
+    form button {
+      margin-top: 15px;
+      padding: 5px;
+      outline: none;
+      width: 900px;
+      color: rgba(4, 4, 9, 0.689);
+      border: 2px solid navy;
+      font-size: 12px;
+      border-radius: 19px;
+      background-color: lightblue;
+      font-size: 18px;
+      width: 160px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    form button:hover {
+      background-color: lightseagreen;
+      transition: all ease 1s;
+      border: 2px solid #1f2235;
+    }
+    
+    button .load {
+      width: 100%;
+    }
+    
+    button .load img {
+      width: 60px;
+      color: green;
+    }
+    .col i {
+      padding: 7px;
+      color: rgba(4, 4, 9, 0.689);
+    }
+    .col i:hover {
+      transform: scale(1.5);
+    }
+    
+    @media screen and (min-width: 940px) {
+      .back-form {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+    
+      .img-back {
+        flex: 1;
+        align-self: center;
+        margin-right: 20px;
+      }
+    
+      form {
+        flex: 0.9;
+      }
+    }
+    @media screen and (max-width: 414px) {
+      .central-form h2 {
+        font-size: 16px;
+      }
+    }
+    
+    */
+
+    .contact-section {
+      background-color: var(--main-color);
+      left: 0;
+      position: absolute;
+      top: 5382px;
+      width: 1368px;
+    }
+    
+    .contact-me {
+      color: transparent;
+      font-family: "Inter", Helvetica;
+      font-size: 48px;
+      font-weight: 400;
+      left: 530px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 55px;
+    }
+    
+    .overlap-19 {
+      background-color: #323946;
+      border-radius: 41px;
+      height: 803px;
+      left: 42px;
+      position: absolute;
+      top: 188px;
+      width: 1284px;
+    }
+    
+    .overlap-20 {
+      height: 39px;
+      left: 647px;
+      position: absolute;
+      top: 54px;
+      width: 292px;
+    }
+    
+    .send-message-us {
+      color: transparent;
+      font-family: "Inter", Helvetica;
+      font-size: 32px;
+      font-weight: 400;
+      left: 0;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 0;
+      width: 292px;
+    }
+    
+    .line {
+      height: 2px;
+      left: 3px;
+      position: absolute;
+      top: 36px;
+      width: 79px;
+    }
+    
+   .div-wrapper {
+      /* background-color: #1f242d; */
+      border-radius: 10px;
+      height: 48px;
+      left: 602px;
+      position: absolute;
+      top: 144px;
+      width: 290px;
+    }
+    
+    .text-wrapper-23 {
+      color: #ffffff4c;
+      font-family: "Inter", Helvetica;
+      font-size: 20px;
+      font-weight: 400;
+      left: 6px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 16px;
+      width: 162px;
+    }
+    
+    .overlap-21 {
+      background-color: #1f242d;
+      border-radius: 10px;
+      height: 48px;
+      left: 946px;
+      position: absolute;
+      top: 144px;
+      width: 290px;
+    }
+    
+    .contact-name {
+      background-color: #1f242d;
+      border-radius: 10px;
+      height: 48px;
+      
+      position: absolute;
+      top: 9px;
+      width: 290px;
+      font-size: 20px;
+      font-weight: 400;
+      left: 7px;
+      letter-spacing: 0;
+      line-height: normal;
+      color: var(--text-color);
+      background: #1f242d;
+    }
+    
+    .overlap-22 {
+      height: 47px;
+      left: 30px;
+      position: absolute;
+     
+
+    }
+    .head-con {
+      color: var(--main-color);
+      font-size: 5rem;
+
+    }
+    
+    .get-in-touc {
+  
+      left: 0;
+      top: -20px;
+      font-size: 5rem;
+     
+    }
+    
+    .line-2 {
+      height: 2px;
+      left: 3px;
+      position: absolute;
+      top: 54px;
+      width: 95px;
+    }
+    
+    .welcome-to-our {
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 24px;
+      font-weight: 400;
+      left: 30px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      text-align: justify;
+      top: 143px;
+      width: 503px;
+    }
+    
+    .location-icon {
+      height: 65px;
+      left: 30px;
+      object-fit: cover;
+      position: absolute;
+      top: 349px;
+      width: 65px;
+    }
+    
+    .text-wrapper-25 {
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 24px;
+      font-weight: 400;
+      left: 142px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 349px;
+      width: 373px;
+    }
+    
+    .text-wrapper-26 {
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 24px;
+      font-weight: 400;
+      left: 142px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 447px;
+      width: 356px;
+    }
+    
+    .text-wrapper-27 {
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 24px;
+      font-weight: 400;
+      left: 142px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 539px;
+      white-space: nowrap;
+      width: 302px;
+    }
+    
+    .phone-icon {
+      height: 65px;
+      left: 33px;
+      object-fit: cover;
+      position: absolute;
+      top: 440px;
+      width: 65px;
+    }
+    
+    .email-icon {
+      height: 65px;
+      left: 30px;
+      object-fit: cover;
+      position: absolute;
+      top: 524px;
+      width: 65px;
+    }
+    
+    .overlap-group-4 {
+      background-color: #1f242d;
+      border-radius: 10px;
+      height: 201px;
+      left: 607px;
+      position: absolute;
+      top: 362px;
+      width: 643px;
+    }
+    
+    .text-wrapper-28 {
+      color: #ffffff4c;
+      font-family: "Inter", Helvetica;
+      font-size: 20px;
+      font-weight: 400;
+      left: 8px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 5px;
+      white-space: nowrap;
+      width: 301px;
+    }
+    
+    .overlap-23 {
+      background-color: #1f242d;
+      border-radius: 10px;
+      height: 48px;
+      left: 946px;
+      position: absolute;
+      top: 236px;
+      width: 290px;
+    }
+    
+    .text-wrapper-29 {
+      color: #ffffff4c;
+      font-family: "Inter", Helvetica;
+      font-size: 20px;
+      font-weight: 400;
+      left: 5px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 15px;
+      width: 78px;
+    }
+    
+    .overlap-24 {
+      background-color: #1f242d;
+      border-radius: 10px;
+      height: 48px;
+      left: 602px;
+      position: absolute;
+      top: 236px;
+      width: 295px;
+    }
+    
+    .text-wrapper-30 {
+      color: #ffffff4c;
+      font-family: "Inter", Helvetica;
+      font-size: 20px;
+      font-weight: 400;
+      left: 5px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 11px;
+      width: 259px;
+    }
+    
+    .overlap-25 {
+      background-color: #00eeff;
+      border-radius: 50px;
+      height: 61px;
+      left: 81px;
+      position: absolute;
+      top: 660px;
+      width: 313px;
+    }
+    
+    .text-wrapper-31 {
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 32px;
+      font-weight: 400;
+      left: 19px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 9px;
+      width: 233px;
+    }
+    
+    .linked-in-3 {
+      height: 45px;
+      left: 255px;
+      object-fit: cover;
+      position: absolute;
+      top: 9px;
+      width: 45px;
     }
   
     /*--------------------- Footer style ----------------- */

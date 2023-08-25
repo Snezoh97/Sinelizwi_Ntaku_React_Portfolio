@@ -94,7 +94,7 @@ function About (props) {
               </div>
               </div>
               <br /><br />
-              <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Click!</span><span>Download Cv</span></a>
+              <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Hire Me!</span><span>Download Cv</span></a>
             </div>
           </div>
       </div>

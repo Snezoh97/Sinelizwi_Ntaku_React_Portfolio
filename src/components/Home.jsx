@@ -42,7 +42,6 @@ function Home() {
                 </p>
                 <div className="social-media">
                     <a href="https://www.facebook.com/sinelizwitaku.cnera?mibextid=ZbWKwL" title="Facebook"><i className='bx bxl-facebook'></i></a>
-                    <a href="https://twitter.com/SCnezoh?t=HX2WChSCX51FW1XzThWggw&s=09" title="Twitter"><i className='bx bxl-twitter'></i></a>
                     <a href="https://instagram.com/snezohh?igshid=MzNlNGNkZWQ4Mg==" title="Instagram"><i className='bx bxl-instagram' ></i></a>
                     <a href="https://www.linkedin.com/in/sinelizwintaku" title="Linkedin"><i className='bx bxl-linkedin' ></i></a>
                     <a href="https://github.com/Snezoh97" title="GitHub"><i className='bx bxl-github'></i></a>
@@ -51,7 +50,7 @@ function Home() {
                 {/* <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
                 Hire Me
                 </a> */}
-                <a href="#contact" className="custom-btn btn-12"><span>Click!</span><span>Let's Chat!</span></a>
+                <a href="#contact" className="custom-btn btn-12"><span>Contact Me!</span><span>Let's Chat!</span></a>
             </div>
             <div className="home-img">
                 <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="about-img"/>
