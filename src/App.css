@@ -526,38 +526,39 @@
 
     .portfolio-box .portfolio-layer .boxHeading{
       position: relative;
-      top: -40px;
-      font-size: 30px;
+      top: -5px;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .portfolio-box .portfolio-layer .boxHeading:hover {
+      color: var(--bg-color);
+      letter-spacing: 0.2rem;
     }
 
     .portfolio-box .portfolio-layer .boxParagraph{
-      font-size: 13px;
+      font-size: 1.6rem;
       position: relative;
-      top: -60px;
+      top: -40px;
+      margin: 1rem 0 1rem;
+      letter-spacing: 0.2rem;
     }
 
-    .portfolio-box .portfolio-layer #link{
-      position: relative;
-      top: -3k0px;
+    .portfolio-box .portfolio-layer .boxParagraph:hover {
+      color: var(--bg-color);
     }
-  
-  .portfolio-box .portfolio-layer p {
-    font-size: 5.6rem;
-    margin: 1rem 0 1rem;
-    letter-spacing: 0.2rem;
-  }
-  
-  .portfolio-box .portfolio-layer i {
-    font-size: 2rem;
-    color: var(--hover-color);
-  }
-  
-  .portfolio-box .portfolio-layer h4 {
-    font-size: 2.6rem;
-    text-align: center;
-    color: var(--text-color);
-    padding: 0;
-  }
+
+    .portfolio-box .portfolio-layer .link{
+      position: relative;
+      top: -25px;
+      font-size: 4rem;
+      color: var(--hover-color);
+      transition: .2s ease-in-out;
+    }
+
+    .portfolio-box .portfolio-layer .link:hover {
+      color: var(--bg-color);
+    }
     
   .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
@@ -968,9 +969,16 @@
     }
   
     .portfolio-container {
+      display:grid;
+      margin: 5px;
+      padding: 5%;
       grid-template-columns: repeat(2, 1fr);
     }
   
+    .portfolio-box .portfolio-layer {
+      display: grid;
+      width: 100%;
+    }
     .portfolio-box .portfolio-layer p {
       font-size: 1.3rem;
     }
@@ -980,7 +988,7 @@
     }
   
     .portfolio-box .portfolio-layer i {
-      font-size: 2.5rem;
+      font-size: 6rem;
     }
   
   }
