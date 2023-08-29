@@ -40,6 +40,7 @@ function Home() {
                 foundation in creating responsive and engaging websites. I am also the shareholder of CrazY MediA FilM PTY
                 (LTD), a photography and videography company that specializes in capturing memorable moments for clients.
                 </p>
+                {/* <a href="#contact" className="custom-btn btn-12"><span>Follow Me!</span><span>Let's Connect!</span></a> */}
                 <div className="social-media">
                     <a href="https://www.facebook.com/sinelizwitaku.cnera?mibextid=ZbWKwL" title="Facebook"><i className='bx bxl-facebook'></i></a>
                     <a href="https://instagram.com/snezohh?igshid=MzNlNGNkZWQ4Mg==" title="Instagram"><i className='bx bxl-instagram' ></i></a>
@@ -50,7 +51,9 @@ function Home() {
                 {/* <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
                 Hire Me
                 </a> */}
+                <div className='home-btn'>
                 <a href="#contact" className="custom-btn btn-12"><span>Contact Me!</span><span>Let's Chat!</span></a>
+                </div>
             </div>
             <div className="home-img">
                 <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="about-img"/>
