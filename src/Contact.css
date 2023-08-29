@@ -50,6 +50,15 @@
     padding: 60px 0;
   }
   
+  #contact h2 {
+   margin-top: 0;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  
+  
   .contact .container {
     position: relative;
     
@@ -138,27 +147,27 @@
     margin-bottom: 20px;
   }
   
-  /* .get .title-box-2 h5 {
+  .get .title-box-2 h5 {
+    margin-top: 0;
     font-size: 2.6rem;
     font-weight: 600;
     letter-spacing: 0.3rem;
-  } */
+  }
   
 
-
-.title-box-2 h5:hover {
-    text-decoration: underline;
-    color: red;
-    font-size: 50%;
-}
-
+  .contact-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5rem;
+    }
 
   .get .title-left {
     text-align: left;
   }
   
   .more-info p {
-    font-size: 16px;
+    font-size: 1.8rem;
     color: var(--text-color);
     letter-spacing: 0.3rem;
     padding-bottom: 1.5rem;
@@ -174,3 +183,42 @@
     letter-spacing: 0.3rem;
   }
   
+  /* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .get {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    .touch-text,
+    .contact-text {
+      width: 100%;
+    }
+  
+    .contact-form .input-box input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact .container {
+      font-size: 1.4rem;
+    }
+  
+    #contact h2 {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .get {
+      width: 100%;
+      padding: 20px;
+    }
+  }

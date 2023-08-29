@@ -1,12 +1,13 @@
 const Contact = () => {
   return (
     <section id="contact" className="contact">
+      <h2>Contact<span> Me!</span></h2>
       <div className="container">
         <div className="row">
           <div className='get'>
               <div className="col-md-5 touch-text">
                 <div className="title-box-2 pt-4 pt-md-0">
-                  <h5 className="title-left">
+                  <h5 className="title-left active-link">
                     Get in <span>Touch</span>
                   </h5>
                 </div>
@@ -27,7 +28,7 @@ const Contact = () => {
               
                     <div className="col-md-7 contact-text">
                       <div className="title-box-2">
-                        <h5 className="title-left">
+                        <h5 className="title-left active-link">
                           Send <span>Message Us</span>
                         </h5>
                       </div>
@@ -38,12 +39,12 @@ const Contact = () => {
                           </div>
                           <div class="input-box">
                             <input type="number" placeholder="Mobile Number" autocomplete="off" id="mobile"/>
-                            <input type="text" placeholder="Email Subject" autocomplete="off" id="subject"/>
+                            <input type="text" placeholder="Subject" autocomplete="off" id="subject"/>
                           </div>
                           <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
                       </form>
                       <div className="contact-button">
-                      <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Hire Me!</span><span>Download Cv</span></a>
+                      <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Send Message!</span><span>Send Message!</span></a>
                       </div>
                 </div>
           </div>
