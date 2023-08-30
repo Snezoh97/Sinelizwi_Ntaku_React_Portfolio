@@ -1,7 +1,31 @@
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faStar as farStar } from '@fortawesome/free-regular-svg-icons/faStar';
-// import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import './App.css'
 
-// library.add(farStar, faFacebook, faTwitter, faInstagram);
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import NavBar from './components/Navbar'
+import Portfolio from './components/Portfolio'
+import Services from './components/Services'
+import Testimonials from './components/Testimonials'
+
+function App() {
 
 
+  return (
+    <>
+      <div>
+        <NavBar/>
+        <Home/>
+        <About/>
+        <Services/>
+        <Portfolio/>
+        <Testimonials/>
+        <Contact/>
+        <Footer/>
+      </div>
+    </>
+  )
+}
+
+export default App

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Home.css'
 import Typed from 'typed.js'; 
 import ScrollReveal from 'scrollreveal';
 import 'boxicons/css/boxicons.min.css';
@@ -28,7 +29,7 @@ function Home() {
   }, []);
 
     return (
-        <section className="home bg-image" id="home">
+        <section className="home" id="home">
             <div className="home-content">
                 <h3>Hello, It's Me!</h3>
                 <h1>Sinelizwi Ntaku</h1>
@@ -40,7 +41,7 @@ function Home() {
                 foundation in creating responsive and engaging websites. I am also the shareholder of CrazY MediA FilM PTY
                 (LTD), a photography and videography company that specializes in capturing memorable moments for clients.
                 </p>
-                {/* <a href="#contact" className="custom-btn btn-12"><span>Follow Me!</span><span>Let's Connect!</span></a> */}
+                
                 <div className="social-media">
                     <a href="https://www.facebook.com/sinelizwitaku.cnera?mibextid=ZbWKwL" title="Facebook"><i className='bx bxl-facebook'></i></a>
                     <a href="https://instagram.com/snezohh?igshid=MzNlNGNkZWQ4Mg==" title="Instagram"><i className='bx bxl-instagram' ></i></a>
@@ -48,11 +49,8 @@ function Home() {
                     <a href="https://github.com/Snezoh97" title="GitHub"><i className='bx bxl-github'></i></a>
                     <a href="https://wa.me/message/HP4CKPENLFHKD1" title="WhatsApp"><i className='bx bxl-whatsapp' ></i></a>
                 </div>
-                {/* <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="btn" title="Download Resume">
-                Hire Me
-                </a> */}
                 <div className='home-btn'>
-                <a href="#contact" className="custom-btn btn-12"><span>Contact Me!</span><span>Let's Chat!</span></a>
+                <a href="#contact" className="btn-home btn"><span>Let's Chat!</span><span>Hello!</span></a>
                 </div>
             </div>
             <div className="home-img">

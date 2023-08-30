@@ -1,3 +1,4 @@
+import './About.css'
 import React, { useState } from 'react';
 
 function About (props) {

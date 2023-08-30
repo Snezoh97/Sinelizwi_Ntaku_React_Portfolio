@@ -1,0 +1,95 @@
+
+  /* --------- Header ---------  */
+  
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 2%;
+      background: var(--bg-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  }
+  
+  .header a {
+      text-decoration: none;
+  }
+  
+  .header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  }
+  
+  
+  .logo img {
+      max-height: 40px;
+    }
+    
+  .navbar a {
+      font-size: 1rem;
+      color: var(--text-color);
+      text-decoration: none;
+      margin-left: 2rem;
+      position: relative;
+      letter-spacing: 0.1rem;
+  }
+  
+  .navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .navbar a:hover::after {
+    width: 50%;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+      color: var(--main-color);
+  }
+  
+  #menu-icon {
+      font-size: 3.6rem;
+      color: var(--text-color);
+      display: none;    
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 60%;
+    }
+    #menu-icon {
+      display: block;
+    }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+    
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  }

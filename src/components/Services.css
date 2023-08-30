@@ -1,0 +1,82 @@
+/* ------------- Services ----------------- */
+.container-services {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+  }
+  #services h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .services-containter {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(27.5rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+  }
+  
+  .services-containter .services-box {
+    background: var(--second-bg-color);
+    padding: 1rem 1rem 3rem;
+    border-radius: 2rem;
+    height: auto;
+    text-align: center;
+    border: 0.2rem solid var(--text-color);
+    transition: 0.5s ease;
+  }
+  
+  .services-containter .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+  }
+  
+  .services-box i {
+    font-size: 2rem;
+    color: var(--main-color);
+  }
+  
+  .services-box h3 {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .services-box p {
+    font-size: 1.4rem;
+    margin: 3rem 0 2rem;
+    margin-top: 0;
+    letter-spacing: 0.1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  .services h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-containter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services-box i {
+  font-size: 3rem;
+  color: var(--main-color);
+  }
+
+  .services-box h3 {
+    font-size: 2rem;
+  }
+
+  .services-box p {
+    font-size: 1.6rem;
+    margin: 3rem 0 2rem;
+  }
+}

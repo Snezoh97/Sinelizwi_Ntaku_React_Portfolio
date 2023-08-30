@@ -1,3 +1,4 @@
+import './NavBar.css'
 import React, { useEffect, useRef } from 'react';
 
 function NavBar() {
