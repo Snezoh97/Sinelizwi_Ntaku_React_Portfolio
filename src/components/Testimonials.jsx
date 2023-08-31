@@ -70,7 +70,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div classNamme="swiper-pagination"></div>
     </section>
   );
 }

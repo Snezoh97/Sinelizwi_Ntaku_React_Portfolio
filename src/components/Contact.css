@@ -1,53 +1,9 @@
-/* Contact section */
-  /* Google Fonts - Poppins */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
- 
-  * {
-      box-sizing: border-box;
-      text-decoration: none;
-      border: none;
-      outline: none;
-      font-family: 'Poppins', sans-serif;
-  }
-  
-  :root {
-      --bg-color: #1f242d;
-      --second-bg-color: #323946;
-      --text-color: #fff;
-      --main-color: #0ef;
-      --hover-color: red;
-  }
-  
-  html {
-      font: size 62.5%;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-      scroll-padding-top: 6rem;
-  }
-  
-  html::-webkit-scrollbar{
-    width: .7rem;
-  }
-  
-  html::-webkit-scrollbar-track{
-    background-color: var(--white);
-  }
-  
-  html::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
-  }
-  
- 
-  
-section{
-      min-height: 100vh;
-      padding: 2rem 2%;
-}
+
 
 .contact {
     position: absolute;
     background: var(--second-bg-color);
-    padding: 60px 0;
+    max-width: 12000px;
   }
   
   #contact h2 {
@@ -61,7 +17,7 @@ section{
   
   .contact .container {
     position: relative;
-    
+    z-index: 1;
     color: var(--text-color);
     font-size: 1.6rem;
   }
@@ -89,7 +45,7 @@ section{
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
   }
   
   .title-left {

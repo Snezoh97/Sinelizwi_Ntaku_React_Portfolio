@@ -3,6 +3,7 @@
 #about {
     padding: 5rem 2% 2rem;
     background: var(--second-bg-color);
+    max-width: 12000px;
   }
   
   .row {

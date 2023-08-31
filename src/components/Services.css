@@ -1,9 +1,9 @@
 /* ------------- Services ----------------- */
+
 .container-services {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    
   }
   #services h2 {
     margin-top: 0;
@@ -20,14 +20,15 @@
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto;
+    margin: 4rem auto; /* Adjusted margin for centering */
+    max-width: 1200px;
   }
   
   .services-containter .services-box {
     background: var(--second-bg-color);
     padding: 1rem 1rem 3rem;
     border-radius: 2rem;
-    height: auto;
+    
     text-align: center;
     border: 0.2rem solid var(--text-color);
     transition: 0.5s ease;

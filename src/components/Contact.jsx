@@ -1,6 +1,41 @@
+import React from 'react';
+import emailjs from 'emailjs-com'; // Import the Email.js library
 import './Contact.css'
 
-function Contact (){
+function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    let name = e.target.name.value;
+    let email = e.target.email.value;
+    let contact = e.target.mobile.value;
+    let subject = e.target.subject.value;
+    let message = e.target.message.value;
+
+    let body = "<br/>Name: " + name + "<br/> Email Address: " + email + "<br/> Contact Number: " + contact + "<br/> Subject: " + subject + "<br/> Message: " + message;
+
+    let emailSubject = "Hi Sinelizwi Ntaku, you have received a new email from: " + name;
+
+    emailjs.send("default_service", "template_id", { // Replace with your service ID and template ID
+      SecureToken: "7124848f-5e5e-4efa-bdb9-7a3e2401b901",
+      To: 'sinelizwintaku@gmail.com',
+      From: "sinelizwintaku@gmail.com",
+      Subject: emailSubject,
+      Body: body
+    }).then(
+      (result) => {
+        console.log('Email sent successfully:', result.text);
+        alert('Email sent successfully');
+      },
+      (error) => {
+        console.error('Email sending failed:', error);
+        alert('Email sending failed');
+      }
+    );
+
+    e.target.reset();
+  };
+
     return (
       <section id="contact" className="contact">
         <h2>Contact<span> Me!</span></h2>
@@ -34,19 +69,19 @@ function Contact (){
                             Send <span>Message Us</span>
                           </h5>
                         </div>
-                        <form className="contact-form">
-                            <div class="input-box">
+                        <form className="contact-form" >
+                            <div className="input-box">
                               <input required="" type="text" name="text" placeholder="Full Name"  id="name"/>
                               <input type="email" placeholder="Email Address"  id="email"/>
                             </div>
-                            <div class="input-box">
+                            <div className="input-box">
                               <input type="number" placeholder="Mobile Number"  id="mobile"/>
                               <input type="text" placeholder="Subject"  id="subject"/>
                             </div>
                             <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" ></textarea>
                         </form>
                         <div className="contact-button">
-                        <a href="#contact" className="custom-btn btn-12"><span>Send Message!</span><span>Send Message!</span></a>
+                        <button type="submit" className="custom-btn btn-12" onSubmit={sendEmail}><span>Send Message!</span><span>Send Message!</span></button>
                         </div>
                   </div>
             </div>
