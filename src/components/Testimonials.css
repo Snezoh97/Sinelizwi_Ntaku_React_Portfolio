@@ -157,10 +157,6 @@
         font-size: 1rem;
       }
   
-      .swiper-pagination{
-        position: relative;
-        color: var(--main-color);
-      }
       
       
      /* Small screens */
@@ -174,11 +170,11 @@
   /* Medium and larger screens */
     @media (min-width: 481px) {
       .row-1 {
-        flex-wrap: nowrap; /* Display in a row */
+        flex-wrap: nowrap;
       }
   
       .col {
-        flex: 50%; /* Display two testimonials side by side */
+        flex: 50%;
         max-width: 50%;
         padding: 1rem;
       }

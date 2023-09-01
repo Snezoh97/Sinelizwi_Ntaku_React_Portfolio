@@ -7,40 +7,115 @@
 }
 
 /*--------------------- Footer style ----------------- */
+/* Base styles for screens larger than 1200px */
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: var(--bg-color);
+  position: relative;
+  top: 800px;
+}
+
+.footer-text p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.footer-iconTop a {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  background: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease;
+  margin-right: 1rem;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+  position: relative;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+/* Media query for screens between 769px and 1200px */
+
+@media screen and (max-width: 1200px) {
   .footer {
+    top: 800px;
+    padding: 1.5rem; 
+  }
+
+  .footer-iconTop a {
+    padding: 0.6rem; 
+    height: 2rem; 
+    width: 2rem; 
+    margin-right: 0.5rem; 
+  }
+
+  .footer-iconTop a i {
+    font-size: 2rem; 
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    top: 600px;
+  }
+
+  .footer-text p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-iconTop a {
+    padding: 0.5rem; 
+    height: 2rem; 
+    width: 2rem; 
+    margin-right: 0.3rem; 
+  }
+
+  .footer-iconTop a i {
+    font-size: 1.5rem; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    margin-top: 60%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    top: 900px;
 
   }
-  
-  .footer-text p {
-    font-size: 1.4rem;
-    color: var(--text-color);
+  .footer-iconTop i {
+    padding: 0.5rem; 
+    height: 5rem; 
+    width: 2rem; 
+    margin-right: 0.3rem; 
   }
-  
-  .footer-iconTop a {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem;
-    height: 2rem;
-    width: 2em;
-    background: transparent;
-    border-radius: 50rem;
-    transition: 0.5s ease;
-  }
-  
-  .footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
-  }
-  
+
   .footer-iconTop a i {
-    font-size: 5rem;
-    color: var(--main-color);
+    font-size: 1.5rem; 
   }
-  
+
+  .custom-btn {
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-size: 1.8rem;
+  }
+
+}
