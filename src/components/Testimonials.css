@@ -42,10 +42,15 @@
       
     .row-1 {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      overflow-x: hidden;
+      white-space: nowrap;
+      transition: transform 1s linear;
     }
-      
+    
+    .slide-left {
+      transform: translateX(-100%);
+    }
+
     .col {
       flex: 33.33%;
       max-width: 33.33%;
