@@ -1,5 +1,5 @@
 import React from 'react';
-import emailjs from 'emailjs-com'; // Import the Email.js library
+import emailjs from 'emailjs-com'; 
 import './Contact.css'
 
 function Contact() {

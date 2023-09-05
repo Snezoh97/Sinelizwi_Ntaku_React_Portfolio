@@ -1,49 +1,42 @@
 import './Testimonials.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 function Testimonials() {
-  const [isSliding, setIsSliding] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const testimonialContainerRef = useRef(null);
 
   useEffect(() => {
-    
-    const delay = setTimeout(() => {
-      setIsSliding(true);
-    }, 3000); 
+    const interval = setInterval(() => {
+      scrollToNextSlide();
+    }, 3000); // Adjust the interval time as needed (e.g., every 3 seconds).
 
+    // Clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
-    return () => clearTimeout(delay);
-  }, []);
-
-  const scrollLeft = () => {
-    // Scroll the testimonials to the left
-    const testimonialContainer = document.querySelector('.testimonial-container');
-    if (testimonialContainer) {
-      testimonialContainer.scrollLeft -= 300; // Adjust the scroll distance as needed
+  const scrollToNextSlide = () => {
+    if (testimonialContainerRef.current) {
+      const testimonialContainer = testimonialContainerRef.current;
+      const slideWidth = testimonialContainer.offsetWidth;
+      const nextSlide = (currentSlide + 1) % 6; // Assuming you have 6 testimonials
+      testimonialContainer.scrollTo({
+        left: slideWidth * nextSlide,
+        behavior: 'smooth',
+      });
+      setCurrentSlide(nextSlide);
     }
   };
 
   return (
     <section className="testimonials" id="testimonials">
       <h2>Testimo<span>nials</span></h2>
-      <div className="border"></div>
-      <div className={` row-1 testimonial-container ${isSliding ? 'slide-left' : ''}`}>
-        {window.innerWidth >= 1024 ? (
-          <>
-            <TestimonialSlide />
-            <TestimonialSlide />
-            <TestimonialSlide />
-         
-          </>
-        ) : window.innerWidth >= 768 ? (
-        
-          <>
-            <TestimonialSlide />
-            <TestimonialSlide />
-          </>
-        ) : (
-       
-          <TestimonialSlide />
-        )}
+      <div
+        className="row-1 testimonial-container container-slide"
+        ref={testimonialContainerRef}
+      >
+        {[...Array(6)].map((_, index) => (
+          <TestimonialSlide key={index} />
+        ))}
       </div>
     </section>
   );
@@ -60,14 +53,14 @@ function TestimonialSlide() {
           <a href="" title="Twitter"><i className='bx bxl-twitter'></i></a>
           <a href="" title="Instagram"><i className='bx bxl-instagram' ></i></a>
         </div>
-        <p className="profession"><i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter
-          on GitHub, a versatile tool for converting various measurements and quantities.<i className='bx bxs-quote-right qoutes'></i></p>
+        <p className="profession">
+          <i className='bx bxs-quote-left qoutes'></i> Explore my Java-based unit converter
+          on GitHub, a versatile tool for converting various measurements and quantities.
+          <i className='bx bxs-quote-right qoutes'></i>
+        </p>
       </div>
     </div>
   );
 }
 
 export default Testimonials;
-
-
-
