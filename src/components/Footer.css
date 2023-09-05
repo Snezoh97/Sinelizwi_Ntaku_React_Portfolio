@@ -70,7 +70,8 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    top: 600px;
+    top: 93rem;
+    flex-direction: column-reverse;
   }
 
   .footer-text p {
@@ -95,11 +96,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-    top: 115rem;
+    top: 105rem;
 
   }
   .footer-iconTop  {
     padding: 0.5rem; 
-    font-size: 2.5gffrem; 
+    font-size: 2.5rem; 
   }
 }
