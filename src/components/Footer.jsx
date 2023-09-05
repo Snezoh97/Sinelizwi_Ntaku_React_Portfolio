@@ -9,7 +9,7 @@ const Footer = () => {
                 <p>Copyright &copy; 2023 Developed By Sinelizwi Ntaku | All Right Reserved.</p>
             </div>
             <div className="footer-iconTop">
-                <a href="#home" title="Click to go top again"><i className='bx bx-up-arrow-alt'></i>
+                <a href="#home" title="Top"><i className='bx bx-up-arrow-alt'></i>
                 </a>
             </div>
         </footer>
