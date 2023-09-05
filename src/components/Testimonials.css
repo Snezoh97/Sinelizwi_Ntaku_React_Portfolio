@@ -40,7 +40,7 @@
     }
 
     .col {
-      flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+      flex: 0 0 calc(33.33% - 20px);
       margin: 10px;
     }
       
