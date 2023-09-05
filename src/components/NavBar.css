@@ -65,7 +65,7 @@
   
   @media screen and (max-width: 768px) {
     html {
-      font-size: 60%;
+      font-size: 65%;
     }
     #menu-icon {
       display: block;
@@ -92,4 +92,21 @@
     font-size: 2rem;
     margin: 3rem 0;
   }
+
+  
+  .navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5%;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar a:hover::after {
+    width: 5%;
+  }
+
   }
