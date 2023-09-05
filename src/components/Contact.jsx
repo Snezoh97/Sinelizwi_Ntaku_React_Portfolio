@@ -16,7 +16,7 @@ function Contact() {
 
     let emailSubject = "Hi Sinelizwi Ntaku, you have received a new email from: " + name;
 
-    emailjs.send("default_service", "template_id", { // Replace with your service ID and template ID
+    emailjs.send("default_service", "template_id", {
       SecureToken: "7124848f-5e5e-4efa-bdb9-7a3e2401b901",
       To: 'sinelizwintaku@gmail.com',
       From: "sinelizwintaku@gmail.com",
