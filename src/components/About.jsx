@@ -80,7 +80,7 @@ function About (props) {
                 <ul>
                   <li><span>2023 - Current</span><br />Software Developer Intern at UVU Africa (CapaciTi).</li>
                   <li><span>2022 - 2022</span><br />Merchandiser at Super Spar in Butterworth, Eastern Cape.</li>
-                  <li><span>2019 - Currently</span><br />I contribute part-time and co-own CrazY MediA FilM PTY (LTD), a photography and videography company.</li>
+                  <li><span>2019 - Currently</span><br />I contribute part-time and co-owner at CrazY MediA FilM PTY (LTD), a photography and videography company.</li>
                 </ul>
               </div>
 
@@ -88,14 +88,14 @@ function About (props) {
 
               <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
                 <ul>
-                  <li><span>2022</span><br />Advanced Diploma in Information and Communication Diploma in Application Development</li>
-                  <li><span>2020</span><br />National Diploma in Information and Communication Technology</li>
-                  <li><span>2016</span><br />National Senior Certificate</li>
+                  <li><span>16/May/2022</span><br />Advanced Diploma in Information and Communication Diploma in Application Development</li>
+                  <li><span>17/May/2020</span><br />National Diploma in Information and Communication Technology in Software Develoment</li>
+                  <li><span>26/November/2016</span><br />National Senior Certificate</li>
                 </ul>
               </div>
               </div>
               <br /><br />
-              <a href="https://pdfhost.io/v/A2KyXfMoh_Untitled" className="custom-btn btn-12"><span>Hire Me!</span><span>Download Cv</span></a>
+              <a href="https://www.canva.com/design/DAFh4mdtWYg/MzOakSlpk0fybt_ymU-XqQ/view?utm_content=DAFh4mdtWYg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" className="custom-btn btn-12"><span>Hire Me!</span><span>Download Cv</span></a>
             </div>
           </div>
       </div>

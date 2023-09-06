@@ -55,8 +55,8 @@ function Contact() {
                         feel free to reach out to us.
                         </p>
                         <div className="list-ico">
-                          <li><span className="bx bx-current-location"></span> 10 Kosmos St, Bellville South, Cape Town 7530</li>
-                          <li><span className="bx bx-phone-call"></span> 076 814 9268 / 084 845 0813</li>
+                          <li><span className="bx bx-current-location"></span> Cape Town, Western Cape</li>
+                          <li><span className="bx bx-phone-call"></span> 076 814 9268 </li>
                           <li><span className="bx bx-envelope"></span> sinelizwintaku@gmail.com</li>
                         </div>
                       </div>

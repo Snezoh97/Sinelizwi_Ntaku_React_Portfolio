@@ -43,11 +43,8 @@ function Home() {
                 </p>
                 
                 <div className="social-media">
-                    <a href="https://www.facebook.com/sinelizwitaku.cnera?mibextid=ZbWKwL" title="Facebook"><i className='bx bxl-facebook'></i></a>
-                    <a href="https://instagram.com/snezohh?igshid=MzNlNGNkZWQ4Mg==" title="Instagram"><i className='bx bxl-instagram' ></i></a>
                     <a href="https://www.linkedin.com/in/sinelizwintaku" title="Linkedin"><i className='bx bxl-linkedin' ></i></a>
                     <a href="https://github.com/Snezoh97" title="GitHub"><i className='bx bxl-github'></i></a>
-                    <a href="https://wa.me/message/HP4CKPENLFHKD1" title="WhatsApp"><i className='bx bxl-whatsapp' ></i></a>
                 </div>
                 <div className='home-btn'>
                 <a href="#contact" className="btn-home btn"><span>Let's Chat!</span><span>Hello!</span></a>
