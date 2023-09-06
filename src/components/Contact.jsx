@@ -5,6 +5,9 @@ import './Contact.css';
 
 function Contact() {
   const recaptchaRef = useRef();
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -106,9 +109,9 @@ function Contact() {
                 <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
               </form>
               <ReCAPTCHA
-              sitekey="6LfurQMoAAAAAMePe2X8M4MMRp3d3OWk4_zJX1VA"
-              
-            />
+                sitekey="6LfurQMoAAAAAMePe2X8M4MMRp3d3OWk4_zJX1VA"
+                onChange={handleRecaptchaChange}
+              />
               <div className="contact-button">
                 <button type="submit"  className="contact-btn btn-contact" onClick={sendEmail}><span>Send Message!</span><span>Send Message!</span>
                 </button>
