@@ -14,7 +14,7 @@
   padding: 1rem 5%;
   background: var(--bg-color);
   position: relative;
-  top: 50rem;
+  top: 60rem;
 }
 
 .footer-text p {
@@ -49,9 +49,9 @@
 
 /* Media query for screens between 769px and 1200px */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .footer {
-    top: 52rem;
+    top: 55rem;
     padding: 1.5rem; 
   }
 
@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    top: 93rem;
+    top: 99.2rem;
     flex-direction: column-reverse;
   }
 
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-    top: 105rem;
+    top: 110rem;
 
   }
   .footer-iconTop  {
