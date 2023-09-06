@@ -81,7 +81,7 @@ function Contact() {
                             <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" ></textarea>
                         </form>
                         <div className="contact-button">
-                        <button type="submit" className="custom-btn btn-12" onSubmit={sendEmail}><span>Send Message!</span><span>Send Message!</span></button>
+                        <button type="submit" className="contact-btn btn-contact" onSubmit={sendEmail}><span>Send Message!</span><span>Send Message!</span></button>
                         </div>
                   </div>
             </div>

@@ -149,7 +149,7 @@
   margin-top: 5rem;
 } 
 
-.custom-btn {
+.contact-btn {
   width: 65%;
   border-radius: 5px;
   padding: 10px 25px;
@@ -168,7 +168,7 @@
   letter-spacing: 0.1rem;
 }
 
-.btn-12{
+.btn-contact{
   position: relative;
   right: 20px;
   bottom: 20px;
@@ -180,7 +180,7 @@
   -webkit-perspective: 230px;
   perspective: 230px;
 }
-.btn-12 span {
+.btn-contact span {
   background: rgb(252, 2, 156);
   background: var(--main-color);
   color: var(--bg-color);
@@ -202,7 +202,7 @@
 
 }
 
-.btn-12 span:nth-child(1) {
+.btn-contact span:nth-child(1) {
   box-shadow:
    -7px -7px 20px 0px #fff9,
    -4px -4px 5px 0px #fff9,
@@ -216,7 +216,7 @@
   transform-origin: 50% 50% -20px;
 }
 
-.btn-12 span:nth-child(2) {
+.btn-contact span:nth-child(2) {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
@@ -225,7 +225,7 @@
   transform-origin: 50% 50% -20px;
 }
 
-.btn-12:hover span:nth-child(1) {
+.btn-contact:hover span:nth-child(1) {
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
@@ -234,7 +234,7 @@
   transform: rotateX(0deg);
 }
 
-.btn-12:hover span:nth-child(2) {
+.btn-contact:hover span:nth-child(2) {
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
@@ -286,12 +286,12 @@
     padding: 20px;
   }
 
-  .custom-btn {
+  .contact-btn {
     margin-top: 0;
     margin-bottom: 10%;
     font-size: 1.7rem;
   }
-  .btn-12 {
+  .btn-contact {
     width: 70%;
   }
 }
