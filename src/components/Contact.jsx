@@ -1,10 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
-import { collection, addDoc } from 'firebase/firestore/lite';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getFirestore } from 'firebase/firestore/lite';
 import './Contact.css';
 
 function Contact() {
