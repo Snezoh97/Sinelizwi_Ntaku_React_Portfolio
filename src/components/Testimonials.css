@@ -70,34 +70,26 @@ section {
 
 .testimonial-container {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     background: var(--second-bg-color);
     padding: 20px;
     overflow-x: hidden;
     border-radius: 3rem;
-    max-width: 100%; /* Ensure the container adapts to screen width */
-}
-
-
-
-.testimonials {
-    min-height: auto;
-    width: 100%;
-    text-align: center;
+    max-width: 100%; 
 }
 
 .col {
     width: 180px;
-    margin-left: 10px;
-    padding: 3rem 0.99rem;
+    margin-left: 6px;
+    padding: 3rem 0.4rem;
     margin-right: 0; /* No margin on the right */
 }
 
 .testimonial-card {
     width: 280px;
     height: 390px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -184,7 +176,7 @@ section {
     text-transform: uppercase;
     margin-top: 0;
     z-index: 1;
-    color:black;
+    color: var(--main-color);
 }
 
 .profession {
