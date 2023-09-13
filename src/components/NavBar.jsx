@@ -14,10 +14,23 @@ function NavBar() {
       navbar.classList.toggle('active');
     }
 
+    function handleMenuItemClick() {
+      menuIcon.classList.remove('bx-x');
+      navbar.classList.remove('active');
+    }
+
     menuIcon.addEventListener('click', handleMenuIconClick);
+
+    const menuItems = navbar.querySelectorAll('a');
+    menuItems.forEach((menuItem) => {
+      menuItem.addEventListener('click', handleMenuItemClick);
+    });
 
     return () => {
       menuIcon.removeEventListener('click', handleMenuIconClick);
+      menuItems.forEach((menuItem) => {
+        menuItem.removeEventListener('click', handleMenuItemClick);
+      });
     };
   }, []);
 

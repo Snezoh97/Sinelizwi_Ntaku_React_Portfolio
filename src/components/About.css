@@ -116,7 +116,7 @@ section {
     content: '';
     width: 0;
     height: 3px;
-    background: var(--hover-color);
+    background: var(--main-color);
     position: absolute;
     left: 0;
     top: 30px;
