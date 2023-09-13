@@ -83,7 +83,7 @@ section {
     width: 180px;
     margin-left: 6px;
     padding: 3rem 0.4rem;
-    margin-right: 0; /* No margin on the right */
+    margin-right: 0;
 }
 
 .testimonial-card {
