@@ -47,12 +47,12 @@ function About (props) {
                 >
                   Certificates
                 </p>
-                <p
+                {/* <p
                   className={`tab-links ${activeTab === 'achievements' ? 'active-link' : ''}`}
                   onClick={() => handleTabClick('achievements')}
                 >
                   Achievements
-                </p>
+                </p> */}
                 <p
                   className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`}
                   onClick={() => handleTabClick('experience')}
@@ -72,13 +72,22 @@ function About (props) {
                   <li><span>Multimedia artist</span><br />I specialize in creating visually appealing and engaging content for advertising campaigns.</li>
                 </ul>
               </div>
+
+              <div className={`tab-contents ${activeTab === 'certificates' ? 'active-tab' : ''}`} id="certificates">
+                <ul>
+                  <li><span>Introduction to HTML & CSS</span><br />Learning the basics of HTML and CSS from SoloLean</li>
+                  <li><span>Intermediate to Java</span><br />I was doing java codes from SoloLearn</li>
+                  <li><span>Figma</span><br />I was learning how to design prototype from Coursera</li>
+                </ul>
+              </div>
             
 
               {/* -------- Experience -------  */}
 
               <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab' : ''}`} id="experience">
                 <ul>
-                  <li><span>2023 - Current</span><br />Software Developer Intern at UVU Africa (CapaciTi).</li>
+                  <li><span>July|2023 - Current</span><br />Junior Software Developer at Younglings Africa.</li>
+                  <li><span>Feb|2023 - July|2023</span><br />Software Developer Intern at UVU Africa.</li>
                   <li><span>2022 - 2022</span><br />Merchandiser at Super Spar in Butterworth, Eastern Cape.</li>
                   <li><span>2019 - Currently</span><br />I contribute part-time and co-owner at CrazY MediA FilM PTY (LTD), a photography and videography company.</li>
                 </ul>
@@ -88,9 +97,9 @@ function About (props) {
 
               <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
                 <ul>
-                  <li><span>16/May/2022</span><br />Advanced Diploma in Information and Communication Diploma in Application Development</li>
-                  <li><span>17/May/2020</span><br />National Diploma in Information and Communication Technology in Software Develoment</li>
-                  <li><span>26/November/2016</span><br />National Senior Certificate</li>
+                  <li><span>May</span>|<span>2022</span><br />Advanced Diploma in Information and Communication Diploma in Application Development</li>
+                  <li><span>May</span>|<span>2020</span><br />National Diploma in Information and Communication Technology in Software Develoment</li>
+                  <li><span>November</span>|<span>2016</span><br />National Senior Certificate</li>
                 </ul>
               </div>
               </div>
