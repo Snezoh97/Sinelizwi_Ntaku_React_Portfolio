@@ -12,7 +12,6 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
      
-
       let name = e.target.name.value;
       let email = e.target.email.value;
       let contact = e.target.mobile.value;

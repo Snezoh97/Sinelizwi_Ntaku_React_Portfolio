@@ -1,9 +1,10 @@
 import './NavBar.css'
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 function NavBar() {
   const menuIconRef = useRef(null);
   const navbarRef = useRef(null);
+  const [activeTab, setActiveTab] = useState('home'); // Initialize with the first tab as active
 
   useEffect(() => {
     const menuIcon = menuIconRef.current;
@@ -14,9 +15,11 @@ function NavBar() {
       navbar.classList.toggle('active');
     }
 
-    function handleMenuItemClick() {
+    function handleMenuItemClick(event) {
       menuIcon.classList.remove('bx-x');
       navbar.classList.remove('active');
+      const target = event.target;
+      setActiveTab(target.getAttribute('href').substring(1)); // Extract the target tab from the href attribute
     }
 
     menuIcon.addEventListener('click', handleMenuIconClick);
@@ -43,12 +46,12 @@ function NavBar() {
       <i className='bx bx-menu' id="menu-icon" ref={menuIconRef}></i>
 
       <nav className="navbar" ref={navbarRef}>
-        <a href="#home" className="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" className={activeTab === 'home' ? 'active' : ''}>Home</a>
+        <a href="#about" className={activeTab === 'about' ? 'active' : ''}>About</a>
+        <a href="#services" className={activeTab === 'services' ? 'active' : ''}>Services</a>
+        <a href="#portfolio" className={activeTab === 'portfolio' ? 'active' : ''}>Portfolio</a>
+        <a href="#testimonials" className={activeTab === 'testimonials' ? 'active' : ''}>Testimonials</a>
+        <a href="#contact" className={activeTab === 'contact' ? 'active' : ''}>Contact</a>
       </nav>
     </header>
   );
