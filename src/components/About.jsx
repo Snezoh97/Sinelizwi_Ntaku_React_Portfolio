@@ -9,7 +9,7 @@ function About (props) {
   };
 
   return (
-    <section id="about">
+    <section className='about' id="about">
       <div className="container">
         <div className="row">
           <div className="about-col-1">
