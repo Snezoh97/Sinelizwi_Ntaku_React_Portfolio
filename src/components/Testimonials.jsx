@@ -1,5 +1,5 @@
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import './Testimonials.css';
 
@@ -11,15 +11,15 @@ function Testimonials() {
         <Carousel
           autoPlay
           infiniteLoop
-          interval={5000} // Adjust the interval as needed (in milliseconds)
+          interval={5000} 
           showStatus={false}
-          showThumbs={true} // Set this to true to display thumbnail navigation
-          dynamicHeight={false} // Ensure the height is consistent for all items
-          showArrows={true} // Display navigation arrows
-          swipeable={true} // Allow swipe navigation on touch devices
-          emulateTouch={true} // Emulate touch behavior for non-touch devices
-          centerMode={true} // Center the currently displayed items
-          centerSlidePercentage={33} // Set the percentage for centering items
+          showThumbs={true} 
+          dynamicHeight={false} 
+          showArrows={true} 
+          swipeable={true}
+          emulateTouch={true}
+          centerMode={true}
+          centerSlidePercentage={33} 
         >
           <div className="col">
             <div className="testimonial-card">
