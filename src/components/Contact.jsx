@@ -63,8 +63,32 @@ function Contact() {
       <div className="container">
         <div className="row">
           <div className="get">
-            <div className="col-md-5 touch-text">
-              {/* ... Rest of your component code ... */}
+          <div className="col-md-5 touch-text">
+              <div className="title-box-2 pt-4 pt-md-0">
+                <h5 className="title-left active-link">
+                  Get in <span>Touch</span>
+                </h5>
+              </div>
+              <div className="more-info">
+                <p className="lead">
+                  Welcome to our website! We're excited to connect with you. If
+                  you have any questions, comments, or would like to get in
+                  touch, feel free to reach out to us.
+                </p>
+                <div className="list-ico">
+                  <li>
+                    <span className="bx bx-current-location"></span> Cape Town,
+                    Western Cape
+                  </li>
+                  <li>
+                    <span className="bx bx-phone-call"></span> 076 814 9268{" "}
+                  </li>
+                  <li>
+                    <span className="bx bx-envelope"></span>{" "}
+                    sinelizwintaku@gmail.com
+                  </li>
+                </div>
+              </div>
             </div>
             <div className="col-md-7 contact-text">
               <div className="title-box-2">
