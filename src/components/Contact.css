@@ -15,6 +15,8 @@
     --text-color: #fff;
     --main-color: #0ef;
     --hover-color: red;
+    --bg-button: linear-gradient(to right, rgb(50, 173, 182) , #0ef);
+    --hover-color2:linear-gradient(to right, #0ef, rgb(50, 173, 182));
 }
 
 html {
@@ -208,8 +210,8 @@ section {
 button {
   font-family: inherit;
   font-size: 20px;
-  background: royalblue;
-  color: white;
+  background: var(--bg-button);
+  color: var(--text-color);
   padding: 0.7em 1em;
   padding-left: 0.9em;
   cursor: pointer;
@@ -222,8 +224,13 @@ button {
   margin-top: 2rem;
 }
 
+button:hover {
+  background: var(--hover-color2);
+}
+
 button span {
   display: block;
+  color: var(--text-color);
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
