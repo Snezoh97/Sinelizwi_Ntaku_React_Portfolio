@@ -8,12 +8,12 @@ function Testimonials() {
     <section className="testimonials" id="testimonials">
       <h2>Testimo<span>nials</span></h2>
       <div className="testimonial-container">
-        <Carousel
+        <Carousel 
           autoPlay
           infiniteLoop
           interval={5000} 
           showStatus={false}
-          showThumbs={true} 
+          showThumbs={false} 
           dynamicHeight={false} 
           showArrows={true} 
           swipeable={true}
