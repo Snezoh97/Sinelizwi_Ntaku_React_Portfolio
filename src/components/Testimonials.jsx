@@ -21,7 +21,7 @@ function Testimonials() {
           centerMode={true}
           centerSlidePercentage={33} 
         >
-          <div className="col">
+          <div className="testmonials-slider">
             <div className="testimonial-card">
                   <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="" />
                   <div className="name">Sinelizwi Ntaku</div>
@@ -34,7 +34,7 @@ function Testimonials() {
                     on GitHub, a versatile tool for converting various measurements and quantities. <i className='bx bxs-quote-right quotes'></i></p>
             </div>
           </div>
-          <div className="col">
+          <div className="testmonials-slider">
             <div className="testimonial-card">
             <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="" />
                   <div className="name">1</div>
@@ -47,7 +47,7 @@ function Testimonials() {
                     on GitHub, a versatile tool for converting various measurements and quantities. <i className='bx bxs-quote-right quotes'></i></p>
             </div>
           </div>
-          <div className="col">
+          <div className="testmonials-slider">
             <div className="testimonial-card">
             <img src="https://i.ibb.co/JcT27q8/about-img.png" alt="" />
                   <div className="name">2</div>

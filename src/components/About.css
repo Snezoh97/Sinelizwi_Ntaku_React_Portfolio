@@ -259,11 +259,16 @@ section {
     display: none;
   }
   .sub-tittle {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
+  .text 
+  {
+    font-size: 1.5rem;
+  }
   .tab-links {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .custom-btn {
