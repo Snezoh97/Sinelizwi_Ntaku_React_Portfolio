@@ -255,6 +255,9 @@ section {
 }
 
 @media screen and (max-width: 480px) {
+  .about-col-1 img{
+    display: none;
+  }
   .sub-tittle {
     font-size: 2rem;
   }
