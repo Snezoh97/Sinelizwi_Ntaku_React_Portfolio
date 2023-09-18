@@ -1,121 +1,119 @@
-  /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
-    --hover-color: red;
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --hover-color: red;
 }
 
 html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 html::-webkit-scrollbar {
-    width: .6rem;
+  width: 0.6rem;
 }
 
 html::-webkit-scrollbar-track {
-    background-color: var(--white); 
+  background-color: var(--white);
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 body {
-    background: var(--bg-color) fixed;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
+  background: var(--bg-color) fixed;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 section {
-    min-height: 100vh;
-    padding: 2rem 2%;
-    max-width: 1200px;
-    margin: 0 auto; 
+  min-height: 100vh;
+  padding: 2rem 2%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 
 /* ------------- Services ----------------- */
 
 .container-services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #services h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    line-height: 4.5rem;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 3s ease-in-out;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #services h2:hover {
-    transform: translate(20px, -20px);
-  }
-  
-  .services-containter {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(27.5rem, 1fr));
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem auto; /* Adjusted margin for centering */
-    max-width: 1200px;
-  }
-  
-  .services-containter .services-box {
-    background: var(--second-bg-color);
-    padding: 1rem 1rem 3rem;
-    border-radius: 2rem;
-    
-    text-align: center;
-    border: 0.2rem solid var(--text-color);
-    transition: 0.5s ease;
-  }
-  
-  .services-containter .services-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
-  }
-  
-  .services-box i {
-    font-size: 2rem;
-    color: var(--main-color);
-  }
-  
-  .services-box h3 {
-    font-size: 1.6rem;
-    margin-top: 0.1rem;
-    letter-spacing: 0.1rem;
-  }
-  
-  .services-box p {
-    font-size: 1.4rem;
-    margin: 3rem 0 2rem;
-    margin-top: 0;
-    letter-spacing: 0.1rem;
-  }
+#services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 4.5rem;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 3s ease-in-out;
+}
 
-  @media screen and (max-width: 768px) {
-    
+#services h2:hover {
+  transform: translate(20px, -20px);
+}
+
+.services-containter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(27.5rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto; /* Adjusted margin for centering */
+  max-width: 1200px;
+}
+
+.services-containter .services-box {
+  background: var(--second-bg-color);
+  padding: 1rem 1rem 3rem;
+  border-radius: 2rem;
+
+  text-align: center;
+  border: 0.2rem solid var(--text-color);
+  transition: 0.5s ease;
+}
+
+.services-containter .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-box i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.services-box h3 {
+  font-size: 1.6rem;
+  margin-top: 0.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.services-box p {
+  font-size: 1.4rem;
+  margin: 3rem 0 2rem;
+  margin-top: 0;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
   .services h2 {
     margin-bottom: 2.5rem;
   }
@@ -125,8 +123,8 @@ section {
   }
 
   .services-box i {
-  font-size: 3rem;
-  color: var(--main-color);
+    font-size: 3rem;
+    color: var(--main-color);
   }
 
   .services-box h3 {

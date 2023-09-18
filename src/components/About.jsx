@@ -95,7 +95,9 @@ function About(props) {
                   <li>
                     <span>Web Developer</span>
                     <br />
-                    Developing Websites.
+                    Developing Websites using HTML, CSS, JavaScript and
+                    Frameworks such React JS, Node JS, Express JS, and Vite as a
+                    building tool.
                   </li>
                   <li>
                     <span>Multimedia artist</span>

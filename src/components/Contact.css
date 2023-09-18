@@ -1,54 +1,54 @@
 /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
-    --hover-color: red;
-    --bg-button: linear-gradient(to right, rgb(50, 173, 182) , #0ef);
-    --hover-color2:linear-gradient(to right, #0ef, rgb(50, 173, 182));
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --hover-color: red;
+  --bg-button: linear-gradient(to right, rgb(50, 173, 182), #0ef);
+  --hover-color2: linear-gradient(to right, #0ef, rgb(50, 173, 182));
 }
 
 html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 html::-webkit-scrollbar {
-    width: .6rem;
+  width: 0.6rem;
 }
 
 html::-webkit-scrollbar-track {
-    background-color: var(--white); 
+  background-color: var(--white);
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 body {
-    background: var(--bg-color) fixed;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
+  background: var(--bg-color) fixed;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 section {
-    min-height: 100vh;
-    padding: 2rem 2%;
-    max-width: 1200px;
-    margin: 0 auto; 
+  min-height: 100vh;
+  padding: 2rem 2%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ------- Contact Style ---------- */
@@ -66,7 +66,6 @@ section {
   font-size: 3rem;
   line-height: 4.5rem;
 }
-
 
 .contact .container {
   position: relative;
@@ -126,8 +125,8 @@ section {
   font-size: 1.2rem;
   color: var(--text-color);
   background: var(--second-bg-color);
-  border-radius: .8rem;
-  margin: .7rem 0;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
 }
 
 .contact form .input-box input {
@@ -205,7 +204,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 1rem;
-} 
+}
 
 button {
   font-family: inherit;
@@ -271,19 +270,16 @@ button:active {
   border-radius: 2px;
   border: 1px solid transparent;
   font-size: 1rem;
-  color: #FFF
+  color: #fff;
 }
 
 .alert.alert-square {
-  border-radius: 0
+  border-radius: 0;
 }
 
 .alert.alert-success {
   color: var(--main-color);
 }
-
-
-
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1024px) {
@@ -304,7 +300,6 @@ button:active {
   .contact-text {
     width: 100%;
   }
-
 }
 
 @media (max-width: 450px) {

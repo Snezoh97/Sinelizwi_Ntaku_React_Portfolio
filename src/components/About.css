@@ -255,7 +255,7 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  .about-col-1 img{
+  .about-col-1 img {
     display: none;
   }
   .sub-tittle {
@@ -263,8 +263,7 @@ section {
     margin-bottom: 2rem;
   }
 
-  .text 
-  {
+  .text {
     font-size: 1.5rem;
   }
   .tab-links {
