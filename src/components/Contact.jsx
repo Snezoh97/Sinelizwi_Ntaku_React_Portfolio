@@ -169,8 +169,7 @@ function Contact() {
                 </div>
                 {success && (
                   <p className="alert alert-success hidden-success">
-                    <strong>Well done!</strong> You successfully read this
-                    important alert message.
+                    <strong>Thank you!!!</strong> You successfully submitted your message.
                   </p>
                 )}
               </form>
