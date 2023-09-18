@@ -143,10 +143,12 @@ function Contact() {
                   placeholder="Your Message"
                 ></textarea>
                 <div className="contact-button">
-                  <ReCAPTCHA
-                    sitekey="6LfurQMoAAAAAMePe2X8M4MMRp3d3OWk4_zJX1VA"
-                    onChange={handleRecaptchaChange}
-                  />
+                  <div className="recaptcha">
+                    <ReCAPTCHA
+                      sitekey="6LfurQMoAAAAAMePe2X8M4MMRp3d3OWk4_zJX1VA"
+                      onChange={handleRecaptchaChange}
+                    />
+                  </div>
                   <button type="submit">
                     <div className="svg-wrapper-1">
                       <div className="svg-wrapper">

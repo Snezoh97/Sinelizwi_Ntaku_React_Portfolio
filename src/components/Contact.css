@@ -282,9 +282,6 @@ button:active {
   color: var(--main-color);
 }
 
-
-
-
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1024px) {
   .contact-btn {
@@ -301,11 +298,15 @@ button:active {
     gap: 3rem;
   }
 
-  .touch-text,
-  .contact-text {
+  .touch-text {
     width: 100%;
   }
 
+  .contact-text{
+    margin-left: 0;
+    justify-content: left;
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
