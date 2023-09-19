@@ -10,18 +10,32 @@ function Testimonials() {
         Testimo<span>nials</span>
       </h2>
       <div className="testimonial-container">
-        <Carousel
-          autoPlay
-          infiniteLoop
-          interval={5000}
-          showStatus={false}
-          showThumbs={false}
-          dynamicHeight={false}
-          showArrows={true}
-          swipeable={true}
-          emulateTouch={true}
-          centerMode={true}
-          centerSlidePercentage={33}
+      <Carousel
+      autoPlay
+      infiniteLoop
+      interval={5000}
+      showStatus={false}
+      showThumbs={false}
+      dynamicHeight={false}
+      showArrows={true}
+      swipeable={true}
+      emulateTouch={true}
+      centerMode={true}
+      centerSlidePercentage={20}
+      responsive={[
+        {
+          breakpoint: 1024,
+          settings: {
+            centerMode: false,
+            showArrows: true,
+            showStatus: false,
+            showIndicators: true,
+            swipeable: true,
+            emulateTouch: true,
+            centerSlidePercentage: 100,
+          },
+        },
+      ]}
         >
           <div className="testmonials-slider">
             <div className="testimonial-card">

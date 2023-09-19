@@ -173,8 +173,8 @@
   .testimonial-container {
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 420px;
-    padding: 10%;
+    margin-left: 150px;
+    margin-right: 50px;
     text-align: center;
   }
   
@@ -200,7 +200,7 @@
   .name {
     position: relative;
     top: 190px;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     margin-top: 0;
     z-index: 1;
@@ -208,8 +208,8 @@
 
   .profession {
     position: relative;
-    top: 190px;
-    font-size: 1.8rem;
+    top: 210px;
+    font-size: 1.7rem;
     text-align: center;
     margin: 1rem 0 1rem;
     letter-spacing: 0.1rem;
