@@ -17,11 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-columns: auto;
   height: 100%;
   width: 100%;
   margin-top: 2rem;
-  margin-left: 5rem;
 }
 
 .testimonial-card {
@@ -32,9 +30,8 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
-  margin-right: -1rem;
 }
+
 
 .testimonial-card::before {
   content: "";
@@ -162,7 +159,7 @@
   height: 10px;
   margin: 0 6px; 
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   display: inline-block; 
 }
 
@@ -170,73 +167,103 @@
   background-color: var(--main-color);
 }
 
-/* For screens with max-width: 1690px, increase font size and card size */
-@media (max-width: 1690px) {
-  .testimonial-card {
-    width: 350px;
-    height: 420px;
-  }
-
-  .name {
-    top: 250px;
-    font-size: 1.5rem;
-  }
-
-  .profession {
-    top: 270px;
-    font-size: 1rem;
-  }
-
-  .quotes {
-    font-size: 1.2rem;
-  }
-}
 
 /* For screens with max-width: 768px, display two testimonials and center them */
-/* For screens with max-width: 768px, display two testimonials at the center */
+@media (max-width: 2560px) {
+  .testimonial-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 420px;
+    padding: 10%;
+    text-align: center;
+  }
+  
+}
+
+
+
 @media (max-width: 768px) {
   .testimonial-container {
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 210px;
+    text-align: center;
   }
 
   .testimonial-card {
-    flex-basis: calc(50% - 1.5rem); /* Calculate the width for two testimonials with a smaller gap */
-    margin: rem; /* Add margin for spacing between testimonials */
-    padding: 40px;
-    height: 380px;
+    flex-basis: calc(100% - 1rem); /* Calculate the width for two testimonials with a smaller gap */
+    margin: 7rem; 
+    height: 400px;
+    text-align: center;
   }
 
   .name {
-    top: 140px;
-    font-size: 1.2rem;
+    position: relative;
+    top: 190px;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    z-index: 1;
   }
 
   .profession {
-    top: 155px;
-    font-size: 0.9rem;
+    position: relative;
+    top: 190px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0 1rem;
+    letter-spacing: 0.1rem;
+    z-index: 1;
+  }
+
+  .carousel.carousel-slider .control-dots .dot{
+    display: none;
+  }
+
+  .quotes {
+    font-size: 2rem;
   }
 }
+
 
 
 /* For screens with max-width: 480px, display only one testimonial */
 @media (max-width: 480px) {
   .testimonial-container {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 210px;
+    text-align: center;
   }
 
   .testimonial-card {
-    width: 100%;
-    height: 350px;
+    flex-basis: calc(100% - 1rem); /* Calculate the width for two testimonials with a smaller gap */
+    margin: 7rem; 
+    height: 400px;
+    text-align: center;
   }
 
   .name {
-    top: 140px;
-    font-size: 1.2rem;
+    position: relative;
+    top: 190px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    z-index: 1;
   }
 
   .profession {
-    top: 155px;
-    font-size: 0.9rem;
+    position: relative;
+    top: 205px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem 0 1rem;
+    margin-top: 0;
+    letter-spacing: 0.1rem;
+    z-index: 1;
+  }
+
+  .carousel.carousel-slider .control-dots .dot{
+    display: none;
   }
 }

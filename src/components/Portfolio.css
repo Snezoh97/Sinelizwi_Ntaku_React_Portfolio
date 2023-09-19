@@ -104,6 +104,15 @@
 
 /* Media Queries for Responsiveness */
 
+@media (max-width: 2560px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr); /* Display three columns when max-width is 1280px */
+    gap: 3rem;
+    margin: 3rem;
+  }
+}
+
+
 @media (max-width: 480px) {
   .portfolio-container {
     grid-template-columns: 1fr;
@@ -196,4 +205,3 @@
     letter-spacing: 0.1rem;
   }
 }
-
