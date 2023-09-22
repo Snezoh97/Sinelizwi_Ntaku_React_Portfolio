@@ -13,18 +13,21 @@
   transform: translate(-20px, 20px);
 }
 
-.testimonial-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin-top: 2rem;
+
+.testmonials-slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .testimonial-card {
   width: 280px;
   height: 350px;
+  margin-bottom: 2rem;
   background: var(--second-bg-color);
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -143,7 +146,8 @@
 }
 
 .carousel.carousel-slider .control-dots {
-  position: absolute;
+  display: flex;
+  position: relative;
   bottom: 0; 
   top: 49vh;
   left: 45%;
@@ -151,6 +155,7 @@
   text-align: center;
   width: 100%;
   z-index: 1;
+  display: none;
 }
 
 .carousel.carousel-slider .control-dots .dot {
@@ -166,104 +171,92 @@
 .carousel.carousel-slider .control-dots .dot.selected {
   background-color: var(--main-color);
 }
+/* Adjust the position and size of the carousel arrow buttons */
+.carousel.carousel-slider .control-arrow.control-prev,
+.carousel.carousel-slider .control-arrow.control-next {
+  position: absolute;
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(-50%);
+  width: 40px; /* Set the width of the buttons */
+  height: 40px; /* Set the height of the buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the buttons */
+  color: white; /* Text color for the buttons */
+  border-radius: 50%; /* Make the buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2; /* Ensure the buttons appear above other content */
+  transition: background-color 0.3s ease; /* Add a hover effect */
+}
 
+.carousel.carousel-slider .control-arrow.control-prev:hover,
+.carousel.carousel-slider .control-arrow.control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Change the background color on hover */
+}
 
-/* For screens with max-width: 768px, display two testimonials and center them */
-@media (max-width: 2560px) {
-  .testimonial-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 150px;
-    margin-right: 50px;
-    text-align: center;
+/* Adjust the position of the previous button */
+.carousel.carousel-slider .control-arrow.control-prev {
+  left: 10px; /* Position the previous button to the left */
+}
+
+/* Adjust the position of the next button */
+.carousel.carousel-slider .control-arrow.control-next {
+  right: 10px; /* Position the next button to the right */
+}
+
+/* Ensure the buttons stay within a 1200px wide container */
+.testimonials {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* To contain the absolute-positioned buttons */
+}
+
+/* Adjust the container position for responsiveness */
+@media (max-width: 1200px) {
+  .testimonials {
+    padding: 0 20px; /* Add padding for spacing between the buttons and content */
+  }
+}
+
+/* Responsive adjustments for screens at or below 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .testimonials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px; /* Decrease the space below testimonials-slider */
   }
   
+  #testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 3s ease-in-out;
+    margin-top: 20px; /* Move the heading down */
+  }
+  
+  .testmonials-slider {
+    grid-template-rows: repeat(1, 2fr);
+    gap: 2rem; /* Reduce the gap between testimonials */
+    align-content: start; /* Add this line */
+  }
+
+
 }
 
-
-
-@media (max-width: 768px) {
-  .testimonial-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 210px;
-    text-align: center;
-  }
-
-  .testimonial-card {
-    flex-basis: calc(100% - 1rem); /* Calculate the width for two testimonials with a smaller gap */
-    margin: 7rem; 
-    height: 400px;
-    text-align: center;
-  }
-
-  .name {
-    position: relative;
-    top: 190px;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-top: 0;
-    z-index: 1;
-  }
-
-  .profession {
-    position: relative;
-    top: 210px;
-    font-size: 1.7rem;
-    text-align: center;
-    margin: 1rem 0 1rem;
-    letter-spacing: 0.1rem;
-    z-index: 1;
-  }
-
-  .carousel.carousel-slider .control-dots .dot{
-    display: none;
-  }
-
-  .quotes {
-    font-size: 2rem;
-  }
-}
-
-
-
-/* For screens with max-width: 480px, display only one testimonial */
 @media (max-width: 480px) {
-  .testimonial-container {
+  .testmonials-slider {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 210px;
-    text-align: center;
+    justify-content: space-between;
   }
 
   .testimonial-card {
-    flex-basis: calc(100% - 1rem); /* Calculate the width for two testimonials with a smaller gap */
-    margin: 7rem; 
-    height: 400px;
-    text-align: center;
-  }
-
-  .name {
-    position: relative;
-    top: 190px;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-top: 0;
-    z-index: 1;
-  }
-
-  .profession {
-    position: relative;
-    top: 205px;
-    font-size: 1.7rem;
-    text-align: center;
-    margin: 1rem 0 1rem;
-    margin-top: 0;
-    letter-spacing: 0.1rem;
-    z-index: 1;
-  }
-
-  .carousel.carousel-slider .control-dots .dot{
-    display: none;
+    flex: 0 0 calc(100% - 5rem 5rem);
+    margin-bottom: 2rem;
   }
 }

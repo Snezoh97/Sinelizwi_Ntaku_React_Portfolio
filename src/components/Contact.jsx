@@ -22,6 +22,36 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Validate the name field
+  if (!toSend.name.trim()) {
+    alert("Please enter your Full Name");
+    return;
+  }
+
+  // Validate the email field
+  if (!toSend.email.trim()) {
+    alert("Please enter your Email Address");
+    return;
+  }
+
+  // Validate the mobile field
+  if (!toSend.mobile.trim()) {
+    alert("Please enter your Mobile Number");
+    return;
+  }
+
+  // Validate the subject field
+  if (!toSend.subject.trim()) {
+    alert("Please enter a Subject");
+    return;
+  }
+
+  // Validate the message field
+  if (!toSend.message.trim()) {
+    alert("Please enter your Message");
+    return;
+  }
+
     if (!recaptchaValue) {
       alert("Please complete the reCAPTCHA");
       return;
@@ -32,6 +62,7 @@ function Contact() {
     setTimeout(() => {
       setSuccess(false);
     }, 5000);
+    
 
     const formData = {
       name: toSend.name,
@@ -47,13 +78,20 @@ function Contact() {
     emailjs.send(serviceID, templateID, formData, "gTz3774DkoMfmeYW2").then(
       (result) => {
         console.log("Email sent successfully:", result.text);
-      },
-      (error) => {
-        console.log("Email send error:", error.text);
       }
     );
+
+      // Clear input fields
+      setToSend({
+        name: "",
+        email: "",
+        mobile: "",
+        subject: "",
+        message: "",
+      });
   };
 
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setToSend({ ...toSend, [name]: value });
@@ -85,10 +123,10 @@ function Contact() {
                     Western Cape
                   </li>
                   <li>
-                    <span className="bx bx-phone-call"></span> 076 814 9268{" "}
+                    <span className="bx bx-phone-call"></span> 076 814 9268
                   </li>
                   <li>
-                    <span className="bx bx-envelope"></span>{" "}
+                    <span className="bx bx-envelope"></span>
                     sinelizwintaku@gmail.com
                   </li>
                 </div>
