@@ -13,7 +13,6 @@
   transform: translate(-20px, 20px);
 }
 
-
 .testmonials-slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -205,24 +204,17 @@
   right: 10px; /* Position the next button to the right */
 }
 
-/* Ensure the buttons stay within a 1200px wide container */
-.testimonials {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative; /* To contain the absolute-positioned buttons */
-}
-
-/* Adjust the container position for responsiveness */
-@media (max-width: 1200px) {
-  .testimonials {
-    padding: 0 20px; /* Add padding for spacing between the buttons and content */
+@media (min-width: 768px) and (max-width: 1440px) {
+  .testmonials-slider {
+    grid-template-columns: repeat(3, 1fr); /* Display three columns */
+    gap: 2rem; /* Adjust the gap between testimonials as needed */
+    align-content: start; /* Add this line */
   }
 }
 
 /* Responsive adjustments for screens at or below 768px */
 @media (min-width: 481px) and (max-width: 768px) {
   .testimonials {
-    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 20px; /* Decrease the space below testimonials-slider */
   }
@@ -238,7 +230,9 @@
   }
   
   .testmonials-slider {
-    grid-template-rows: repeat(1, 2fr);
+    justify-content: center;
+    padding-left: 25%;
+    grid-template-rows: 1fr;
     gap: 2rem; /* Reduce the gap between testimonials */
     align-content: start; /* Add this line */
   }
@@ -250,13 +244,34 @@
   .testmonials-slider {
     max-width: 100%;
     margin: 0 auto;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 14%;
   }
 
   .testimonial-card {
-    flex: 0 0 calc(100% - 5rem 5rem);
-    margin-bottom: 2rem;
+    flex: 0 0 calc(100% - 0rem);
+  }
+
+  .name {
+
+    top: 170px;
+    font-size: 2rem;
+    
+  }
+  
+  .profession {
+    top: 180px;
+    font-size: 1.4rem;
+  
+    color: var(--text-color);
+  
+  }
+
+  .quotes {
+    font-size: 1.2rem;
   }
 }
