@@ -310,23 +310,21 @@ button:active {
 }
 
 @media (max-width: 450px) {
-  .contact .container {
-    font-size: 1.4rem;
+  .get {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
   }
 
-  #contact h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 3.5rem;
-    margin-bottom: 3rem;
-  }
 
   .contact-form {
-    padding: 2rem 2%;
-    padding: 20px;
+    padding: 2rem 4%;
+   
   }
   .contact form .input-box input {
     width: 100%;
+    padding: 2rem 4%;
   }
 
   .get {
@@ -341,5 +339,71 @@ button:active {
   }
   .btn-contact {
     width: 70%;
+  }
+}
+
+/* Your existing CSS code */
+
+/* Media Query for iPhone 5 (320px screen width) */
+@media screen and (max-width: 320px) {
+  .get h4 {
+    text-align: center;
+  }
+
+  .contact .container {
+    font-size: 1rem; 
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 0.9rem;
+    max-width: 100%; 
+  }
+
+  .get .title-box-2 h3 {
+    font-size: 1.5rem;
+}
+
+}
+@media screen and (max-width: 768px) {
+  .get {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+  }
+  .contact .container {
+    font-size: 1.2rem;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1rem;
+    max-width: 100%;
+    gap: 3rem;
+  }
+
+  .get .title-box-2 h3 {
+    font-size: 1.5rem;
+  }
+
+  .more-info p {
+    font-size: 1.2rem;
+  }
+
+  .list-ico li {
+    font-size: 1rem;
+  }
+  .recaptcha {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%; /* Adjust the width as needed for responsiveness */
+    margin: 0 auto;
+  }
+  
+
+  button {
+    font-size: 2rem;
   }
 }

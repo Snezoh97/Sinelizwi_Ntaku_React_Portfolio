@@ -93,12 +93,12 @@ function NavBar() {
         >
           Portfolio
         </a>
-        <a
+        {/* <a
           href="#testimonials"
           className={activeTab === "testimonials" ? "active" : ""}
         >
           Testimonials
-        </a>
+        </a> */}
         <a href="#contact" className={activeTab === "contact" ? "active" : ""}>
           Contact
         </a>
