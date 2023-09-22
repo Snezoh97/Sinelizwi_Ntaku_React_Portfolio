@@ -150,7 +150,7 @@ function Testimonials() {
                   src="https://i.ibb.co/JcT27q8/about-img.png"
                   alt="Dr. S Kasana"
                 />
-                <div className="name">Sikelela Ntaku</div>
+                <div className="name">Dyantyi Lwazi</div>
                 <div className="media-icons">
                   <a href="" title="Facebook">
                     <i className="bx bxl-facebook"></i>
@@ -178,7 +178,7 @@ function Testimonials() {
                   src="https://i.ibb.co/JcT27q8/about-img.png"
                   alt="Dr. S Kasana"
                 />
-                <div className="name">Sikelela</div>
+                <div className="name">Anganathi Zingca</div>
                 <div className="media-icons">
                   <a href="" title="Facebook">
                     <i className="bx bxl-facebook"></i>
