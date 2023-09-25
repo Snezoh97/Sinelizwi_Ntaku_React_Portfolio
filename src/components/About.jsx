@@ -140,17 +140,17 @@ function About(props) {
               >
                 <ul>
                   <li>
-                    <span>July|2023 - Current</span>
+                    <span>2023(July) - Current</span>
                     <br />
                     Junior Software Developer at Younglings Africa.
                   </li>
                   <li>
-                    <span>Feb|2023 - July|2023</span>
+                    <span>2023(Feb) - 2023(July)</span>
                     <br />
                     Software Developer Intern at UVU Africa.
                   </li>
                   <li>
-                    <span>2022 - 2022</span>
+                    <span>2022(Sep) - 2022(Nov)</span>
                     <br />
                     Merchandiser at Super Spar in Butterworth, Eastern Cape.
                   </li>
@@ -172,19 +172,19 @@ function About(props) {
               >
                 <ul>
                   <li>
-                    <span>May</span>|<span>2022</span>
+                    <span>2022</span>
                     <br />
                     Advanced Diploma in Information and Communication Diploma in
                     Application Development
                   </li>
                   <li>
-                    <span>May</span>|<span>2020</span>
+                    <span>2020</span>
                     <br />
                     National Diploma in Information and Communication Technology
                     in Software Develoment
                   </li>
                   <li>
-                    <span>November</span>|<span>2016</span>
+                    <span>2016</span>
                     <br />
                     National Senior Certificate
                   </li>

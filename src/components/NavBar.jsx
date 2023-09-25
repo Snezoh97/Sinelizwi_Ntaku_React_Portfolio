@@ -1,10 +1,12 @@
 import "./NavBar.css";
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useCycle } from "framer-motion";
 
 function NavBar() {
   const menuIconRef = useRef(null);
   const navbarRef = useRef(null);
   const [activeTab, setActiveTab] = useState("home");
+  const [isBouncing, toggleBounce] = useCycle(false, true);
 
   useEffect(() => {
     const menuIcon = menuIconRef.current;
@@ -62,6 +64,10 @@ function NavBar() {
     };
   }, []);
 
+  useEffect(() => {
+    toggleBounce();
+  }, [toggleBounce]);
+
   return (
     <header className="header" id="header">
       <a href="#home" className="logo">
@@ -72,36 +78,70 @@ function NavBar() {
         />
       </a>
 
-      <i className="bx bx-menu" id="menu-icon" ref={menuIconRef}></i>
+      <motion.i
+        className={`bx bx-menu ${isBouncing ? "bounce" : ""}`}
+        id="menu-icon"
+        ref={menuIconRef}
+        initial={{ y: -20 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
+      ></motion.i>
 
       <nav className="navbar" ref={navbarRef}>
-        <a href="#home" className={activeTab === "home" ? "active" : ""}>
+        <motion.a
+          href="#home"
+          className={activeTab === "home" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           Home
-        </a>
-        <a href="#about" className={activeTab === "about" ? "active" : ""}>
+        </motion.a>
+        <motion.a
+          href="#about"
+          className={activeTab === "about" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           About
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="#services"
           className={activeTab === "services" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           Services
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="#portfolio"
           className={activeTab === "portfolio" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           Portfolio
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="#testimonials"
           className={activeTab === "testimonials" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           Testimonials
-        </a>
-        <a href="#contact" className={activeTab === "contact" ? "active" : ""}>
+        </motion.a>
+        <motion.a
+          href="#contact"
+          className={activeTab === "contact" ? "active" : ""}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           Contact
-        </a>
+        </motion.a>
       </nav>
     </header>
   );
