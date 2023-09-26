@@ -7,7 +7,7 @@ function Testimonials() {
   const options = {
     autoPlay: true,
     infiniteLoop: true,
-    interval: 5000,
+    interval: 3000,
     showStatus: false,
     showThumbs: true,
     dynamicHeight: false,
@@ -28,7 +28,6 @@ function Testimonials() {
          
           {...options}
         >
-          {/* First Pair of Testimonials */}
           <div className="testmonials-slider" id='testimonials-slider'>
             <div className="testimonial-card">
               <div className="testimonial-content">
@@ -199,7 +198,6 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          {/* Add more pairs of testimonials as needed */}
         </Carousel>
       </div>
     </section>
