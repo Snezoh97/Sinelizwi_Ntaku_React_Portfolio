@@ -126,8 +126,7 @@ function Contact() {
                     <span className="bx bx-phone-call"></span> 076 814 9268
                   </li>
                   <li>
-                    <span className="bx bx-envelope"></span>
-                    sinelizwintaku@gmail.com
+                    <span className="bx bx-envelope"></span> sinelizwintaku@gmail.com
                   </li>
                 </div>
               </div>
