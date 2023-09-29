@@ -113,7 +113,7 @@ function Contact() {
               </div>
               <div className="more-info">
                 <p className="lead">
-                  Welcome to our website! We're excited to connect with you. If
+                  Welcome to our website!<br></br><br></br>  We're excited to connect with you. If
                   you have any questions, comments, or would like to get in
                   touch, feel free to reach out to us.
                 </p>
