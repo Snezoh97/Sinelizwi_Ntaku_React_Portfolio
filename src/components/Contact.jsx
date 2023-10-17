@@ -22,31 +22,26 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate the name field
   if (!toSend.name.trim()) {
     alert("Please enter your Full Name");
     return;
   }
 
-  // Validate the email field
   if (!toSend.email.trim()) {
     alert("Please enter your Email Address");
     return;
   }
 
-  // Validate the mobile field
   if (!toSend.mobile.trim()) {
     alert("Please enter your Mobile Number");
     return;
   }
 
-  // Validate the subject field
   if (!toSend.subject.trim()) {
     alert("Please enter a Subject");
     return;
   }
 
-  // Validate the message field
   if (!toSend.message.trim()) {
     alert("Please enter your Message");
     return;
@@ -81,7 +76,6 @@ function Contact() {
       }
     );
 
-      // Clear input fields
       setToSend({
         name: "",
         email: "",
