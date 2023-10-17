@@ -23,3 +23,7 @@ Start the Development Server: Once the dependencies are installed, you can start
 Access Your App: Open a web browser and navigate to the local development URL provided by the Vite development server (e.g., http://localhost:5173). You should see your React application running. Any changes you make to your code will be automatically reflected with Hot Module Replacement (HMR).
 
 Stop the Development Server: To stop the development server, you can usually press Ctrl + C in the command prompt where the server is running. Confirm the termination when prompted.
+
+Live website link: 
+
+- https://sinelizwi-ntaku-portfolio.firebaseapp.com/
