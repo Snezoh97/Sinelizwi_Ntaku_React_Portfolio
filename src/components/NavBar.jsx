@@ -124,7 +124,7 @@ function NavBar() {
         >
           Portfolio
         </motion.a>
-        <motion.a
+        {/* <motion.a
           href="#testimonials"
           className={activeTab === "testimonials" ? "active" : ""}
           initial={{ opacity: 0 }}
@@ -132,7 +132,7 @@ function NavBar() {
           transition={{ duration: 0.5 }}
         >
           Testimonials
-        </motion.a>
+        </motion.a> */}
         <motion.a
           href="#contact"
           className={activeTab === "contact" ? "active" : ""}
